@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./stat_def.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Statutory Exclusions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Statutory Definitions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,6 +172,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Next Steps</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./changelog.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Change Log</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -213,37 +230,47 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="purpose" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="purpose"><span class="header-section-number">1.1</span> Purpose</h2>
-<p>This documentation provides technical guidance for preparing the municipal developable land inventory required for inclusion in the Housing Growth Plans under <a href="https://cga.ct.gov/2026/sup/chap_124b.htm">Connecticut General Statutes (C.G.S.) §§ 8-13bb and 8-13cc</a>. The inventory identifies land that meets the statutory definition of developable land in <a href="https://cga.ct.gov/2026/sup/chap_124b.htm#sec_8-13aa">C.G.S. § 8-13aa</a> and serves as a foundational input to the Housing Growth Plan process. This guidance is intended to support a consistent and transparent analytical approach across municipalities.</p>
-<div class="callout callout-style-simple callout-note callout-titled">
+<p>This documentation provides technical guidance for preparing the municipal developable land inventory required under <a href="https://cga.ct.gov/2026/sup/chap_124b.htm">Connecticut General Statutes (C.G.S.) Sec. 8-13aa – 8-13dd</a>. This guidance serves as one of the statewide data tools that the CT GIS Office within the Office of Policy and Management (OPM) is directed to develop under statute, for use by municipalities and COGs, together with local data, in compiling the developable land inventory.</p>
+<blockquote class="blockquote">
+<p><a href="https://cga.ct.gov/2026/sup/chap_124b.htm#sec_8-13dd">C.G.S. Sec. 8-13dd(g)</a>: On or before July 1, 2026, and every five years thereafter, the Geographic Information Systems Office within the Office of Policy and Management, in consultation and coordination with the regional councils of governments, shall develop <strong>state-wide data tools for municipalities to use, together with local data, to compile an inventory of developable land</strong>, as defined in section 8-13aa.</p>
+</blockquote>
+<p>The developable land inventory is used for two distinct statutory purposes:</p>
+<ul>
+<li><p><strong>Housing Growth Plans</strong> prepared by municipalities (C.G.S. Sec. 8-13bb) or regional councils of governments (COGs) (C.G.S. Sec. 8-13cc);</p>
+<p>and</p></li>
+<li><p><strong>Regional Needs Assessment allocations</strong> (C.G.S. Sec. 8-13dd), prepared exclusively by COGs</p></li>
+</ul>
+<p>The inventory identifies land that meets the statutory definition of developable land in <a href="https://cga.ct.gov/2026/sup/chap_124b.htm#sec_8-13aa">C.G.S. Sec. 8-13aa</a> and serves as a foundational input to both processes. This guidance is intended to support a consistent and transparent analytical approach across municipalities and COGs, while preserving flexibility in how each community arrives at its final inventory.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>A note about developable land
+<span class="screen-reader-only">Warning</span>A note about developable land
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Identifying land as developable does not obligate anyone to pursue development on that land, nor does exclusion from the inventory limit future development opportunities outside the context of the Housing Growth Plan process. The developable land inventory is not a permanent designation of a property’s development potential. Rather, it is a necessary step in preparing a Housing Growth Plan under C.G.S. §§ 8-13bb and 8-13cc.</p>
+<p>Identifying land as developable does not obligate anyone to pursue development on that land, nor does exclusion from the inventory limit future development opportunities outside the context of the Housing Growth Plan or Regional Needs Assessment process. The developable land inventory is not a permanent designation of a property’s development potential. Rather, it is a necessary step in preparing a Housing Growth Plan under C.G.S. Sec. 8-13bb and 8-13cc and Regional Needs Assessment under C.G.S. Sec. 8-13dd.</p>
 </div>
 </div>
 <p><br></p>
 </section>
 <section id="audience" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="audience"><span class="header-section-number">1.2</span> Audience</h2>
-<p>This document is intended for municipal staff, councils of government or regional planning agencies, and consultants responsible for compiling, reviewing, or applying data for developable land inventories as part of the Housing Growth Plan process.</p>
+<p>This document is intended for municipal staff, councils of government or regional planning agencies, and consultants responsible for compiling, reviewing, or applying data for developable land inventories as part of the Housing Growth Plan or Regional Needs Assessment process.</p>
 <p><br></p>
 </section>
 <section id="overview" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.3</span> Overview</h2>
-<p>This document describes the required outputs of the developable land inventory and provides technical guidance on recommended data sources, analytical methods, and mapping procedures. The guidance is designed to support a consistent, transparent, and repeatable approach across municipalities while allowing for the use of local data and professional judgment where appropriate.</p>
-<p>For additional information on Housing Growth Plans and the role of the developable land inventory within that framework, municipalities should refer to the Housing Growth Plan Guidance [link coming soon].</p>
-<p>The sections that follow describe each statutory exclusion from developable land and the recommended methods for identifying and documenting those exclusions. The document also outlines approaches for identifying vacant and potentially redevelopable land, and provides guidance for assembling the final inventory and associated mapping products.<br>
-<br></p>
+<p>This document describes the required outputs of the developable land inventory for the Housing Growth Plans and Regional Needs Assessment allocations (see <a href="./outputs.html">Section 2</a>). As described above, these two outputs share a common statutory definition of developable land (C.G.S. Sec. 8-13aa) but serve different purposes and are prepared by different parties. This guidance provides technical guidance on optional data sources, analytical methods, and mapping procedures to help municipalities and COGs reach those outputs. The mapping standards in <a href="maps.qmd">Section 5</a> are applicable only to maps included in the Housing Growth Plans, as maps are not an expected output of Regional Needs Assessment allocations.</p>
+<p><strong>Municipalities and COGs have significant latitude in the data and methods used to reach these outputs. This guidance does not prescribe a single required methodology, but instead offers a suggested framework that communities may adopt, adapt, or depart from, so long as the resulting inventory satisfies the statutory definition and meets the required outputs described in this document. Local data and professional judgment are expected to play a role in tailoring the analysis to local conditions.</strong></p>
+<p>For additional information on the program initiatives created by the 2025 Act Concerning Housing Growth and the role of the developable land inventory within that framework, users should refer to the <a href="https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898">OPM Office of Responsible Growth 2025 Act Concerning Housing Growth</a> website.</p>
+<p><br></p>
 </section>
 <section id="use-of-this-guidance" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="use-of-this-guidance"><span class="header-section-number">1.4</span> Use of this Guidance</h2>
-<p>This document provides recommended methodologies for preparing a developable land inventory under C.G.S. §§ 8-13aa, 8-13bb, and 8-13cc. Municipalities may use alternative data sources or analytical approaches where appropriate, provided that the resulting inventory is consistent with the requirements of these statutes and is adequately documented.</p>
+<p>Use this document to identify suggested dataset options and methodologies for arriving at the required outputs of the developable land inventory. Municipalities and COGs are not required to follow the specific data sources or methods suggested in this document. <strong>Alternative approaches are acceptable</strong>, provided the resulting inventory: (1) is consistent with the statutory definition of developable land under C.G.S. Sec. 8-13aa; (2) satisfies the required outputs described in this document, including the required maps; and (3) is adequately documented so that the methodology and results are transparent and reproducible.</p>
 
 
 </section>
@@ -668,7 +695,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>CT GIS Office, July 2026 V1.0</p>
+<p>CT GIS Office, July 2026 V0.1</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

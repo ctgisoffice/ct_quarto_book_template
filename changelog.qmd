@@ -1,0 +1,5 @@
+# Change Log
+
+V0.1 (June 2026)
+
+- First official draft of the document.

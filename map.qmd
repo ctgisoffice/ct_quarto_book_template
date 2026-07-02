@@ -1,6 +1,8 @@
 # Creating the Maps
 
-The developable land inventory identifies land that meets the statutory definition of developable land under C.G.S. § 8-13aa. This inventory serves as a foundational input to subsequent phases of the Housing Growth Plan process, including the suitability analysis and the parcel and zone identification. These later steps will incorporate additional planning considerations, local context, and policy objectives to evaluate where housing growth and affordable housing opportunities may be most appropriate.
+Maps are only required as part of the Housing Growth Plans. They are not a required element of the Regional Needs Assessment. This section focuses on the maps in the Housing Growth Plans.
+
+The developable land inventory process is a preliminary planning-level screening product. It is primarily analytical in nature, involving the identification and documentation of qualifying areas through the application of knowledge, data, and methodology. **A map is not the mechanism by which developable areas are identified, nor does it constitute a determination of a property's development potential**. Rather, it serves as a visual representation of the underlying analysis, allowing the results to be verified and understood spatially.
 
 To support Housing Growth Plan reporting and review, the developable land inventory should be presented in the report as municipality-wide maps. The maps should clearly display the location and distribution of developable land using clear, accessible, and consistent symbology.
 
@@ -10,7 +12,7 @@ The maps should incorporate the following data:
 - Identified vacant parcels ([Section 4](vac_redev.qmd))
 - Identified parcels with redevelopment potential ([Section 4](vac_redev.qmd))
 
-At a minimum, the following maps must be included in the Housing Growth Plan:
+At a minimum, the following maps should be included in the Housing Growth Plan:
 
 1.  **Statutory Exclusions Map**: A municipality-wide map displaying each statutory exclusion category as a separate layer and symbolized distinctly to illustrate the distribution of land excluded from the developable land inventory.
 

@@ -1,24 +1,26 @@
 # Identifying Vacant and Potential Land for Redevelopment
 
-Beyond the statutory requirements, identifying vacant and potentially redevelopable parcels provides important context for the Housing Growth Plans by supporting suitability analyses in subsequent phases.
+Beyond the statutory requirements, identifying vacant and potentially redevelopable areas provides important context for this planning phase and supports analyses of the development potential of identified areas. The inventory produced during this phase serves as a foundation for further study, not a final determination of development potential.
 
-This section describes queries developed to identify the parcels within these categories and a set of analytical approaches that can be used to evaluate redevelopment potential. Together, these methods offer a flexible toolkit for recognizing parcels that might support future housing development and for tailoring analyses to local priorities.
+This section describes suggested queries for identifying parcels within these categories, along with a set of analytical approaches that can be used to evaluate redevelopment potential. As with the rest of this guidance, these methods are offered as a flexible toolkit rather than a required methodology, allowing municipalities and COGs to recognize parcels that might support future housing development while tailoring the analysis to local priorities and conditions.
 
-It is recommended to carefully review outputs using local knowledge, supplemental data sources, and/or aerial imagery.
+**Regardless of the approach used, it is recommended that outputs be carefully reviewed using local knowledge, supplemental data sources, and/or aerial imagery.**
 
-For reference, the following datasets are used in the analyses:
+For reference, the following datasets are used in the following analyses:
 
 **Parcel geometry**: [Connecticut CAMA and Parcel Layer (CT Housing Data Hub)](https://housingmaps.ct.gov/datasets/ctmaps::connecticut-cama-and-parcel-layer/about)
 
 **CAMA data**: [2025 Connecticut Parcel and CAMA Data (CT Open Data Portal)](https://data.ct.gov/Local-Government/2025-Connecticut-Parcel-and-CAMA-Data/rny9-6ak2/about_data)
 
+::: {.callout-note appearance="simple" icon="false"}
 If using aerial imagery for review, high‑resolution statewide imagery (leaf‑off, 4‑band, 3‑inch pixel) is available through CT ECO for [download](https://maps.cteco.uconn.edu/download/) or through [online services](https://maps.cteco.uconn.edu/map-services/). More information can be found on the [2023 Aerial Imagery and Elevation](https://maps.cteco.uconn.edu/data/flight2023/) web page.
+:::
 
 <br/>
 
 ## Vacant Parcels
 
-Vacant parcels represent land that is either currently undeveloped or previously developed but now considered vacant, and they may present direct development opportunities. While no statewide dataset of vacant parcels exists, the statewide CAMA and parcel dataset can be queried to identify parcels labeled as vacant.
+Vacant parcels represent land that is either currently undeveloped or previously developed but now considered vacant. These parcels may present direct development opportunities. While no comprehensive statewide dataset of vacant parcels exists, the statewide CAMA and parcel dataset can be queried to identify parcels labeled as vacant.
 
 ::: {.callout-warning appearance="simple" icon="false"}
 Please note that terminology is not standardized across municipalities statewide; however, many jurisdictions use similar naming conventions and descriptions that can provide useful indicators for identifying parcels that may fit within a given category.
@@ -63,16 +65,18 @@ Potentially redevelopable land consists of previously developed parcels with cha
 
 > Previously contaminated or industrial sites undergoing or eligible for cleanup.
 
-The available data describing brownfield site locations is provided as an .xlsx file maintained by the Connecticut Department of Energy & Environmental Protection (CT DEEP).
+The available data describing brownfield site locations is provided by the Connecticut Department of Energy & Environmental Protection (CT DEEP). For more information, see the [CT DEEP Connecticut Brownfields Inventory](https://portal.ct.gov/deep/remediation--site-clean-up/brownfields/brownfields-site-inventory) web page. This web page provides the locations in a tabular format in a .xlsx file. In addition the data is available as a geospatial layer as points, linked below.
 
-**Dataset**: [Connecticut Brownfields Inventory (CT DEEP)](https://portal.ct.gov/deep/remediation--site-clean-up/brownfields/brownfields-site-inventory)
+**Dataset**: [Brownfields](https://housingmaps.ct.gov/datasets/CTDEEP::brownfields-2025/about)
 
-1.  **Spatializing the data**: Since this data is provided in a tabular format, it is necessary to spatialize it before processing with further analysis. While geocoding is feasible, it is recommended to use the Latitude and Longitude fields to create points corresponding to each brownfield site. The CRS should be NAD 83 Connecticut State Plane (2011). The following resources provide details on translating the tabular latitude and longitude data into geospatial points:
+**Inclusion of a brownfield site in the inventory does not automatically indicate that the site is feasible for redevelopment.** Brownfield sites often require detailed environmental evaluation and may not be financially viable to remediate to residential standards. Municipalities and COGs should carefully review brownfield sites using local knowledge and supplemental data before including them as potentially redevelopable, and should be mindful of environmental justice considerations.
+
+1.  **Spatializing the data**: If using the data in a tabular (.xlsx) format, it is necessary to spatialize it before processing with further analysis. If using the geospatial points layer, this step can be skipped. While geocoding to the address is feasible, it is recommended to use the Latitude and Longitude fields to create points corresponding to each brownfield site. The CRS should be NAD 83 Connecticut State Plane (2011). The following resources provide details on translating the tabular latitude and longitude data into geospatial points:
 
     - ArcGIS Pro: [XY Table to Point](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/data-management/xy-table-to-point.html?tabs=dialog)
     - QGIS: [Create Point Layer from Table](https://qgis-tuts-wu.readthedocs.io/en/latest/land_degradation_development/interpolation/loading_table.html)
 
-2.  Identifying brownfield parcels: Next, use the points to identify parcels that contain brownfield sites. This may be achieved with various queries, summary tools, or join tools that utilize spatial overlap. The following resources provide details and options for this process:
+2.  **Identifying brownfield parcels**: Use the points to identify the parcel geometry of the brownfield sites. This may be achieved with various queries, summary tools, or join tools that utilize spatial overlap. The following resources provide details and options for this process:
 
     - ArcGIS Pro: [Select by Location](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/navigation/select-features-by-location.html), [Spatial Join](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/spatial-join.html?tabs=dialog), [Summarize Within](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/summarize-within.html?tabs=dialog)
     - QGIS: [Extract by Location](https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#extract-by-location) or [Select by Location](https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#select-by-location) within Vector Selection, [Join Attributes by Location](https://www.qgistutorials.com/en/docs/3/performing_spatial_joins.html)
