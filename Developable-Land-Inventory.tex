@@ -295,45 +295,71 @@
 
 The \emph{Developable Land Inventory Technical Guidance}, prepared by
 the Connecticut Office of Policy and Management's GIS Office, provides a
-standardized, transparent framework for municipalities to identify land
-suitable for future residential or mixed-use development as required
-under \href{https://cga.ct.gov/2026/sup/chap_124b.htm}{Connecticut
-General Statutes (C.G.S.) §§ 8-13bb and 8-13cc}. The guidance outlines
-the datasets, analytical methods, and mapping standards needed to
-produce a consistent, statewide inventory of developable land.
+standardized, transparent framework for municipalities to identify a
+``developable land inventory'', a preliminary screening level product,
+as defined in
+\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{Connecticut
+General Statutes (C.G.S.) Sec. 8-13aa}. This is required as part of the
+municipal and regional Housing Growth Plans
+(\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13bb}{C.G.S.
+Sec. 8-13bb and 8-13cc}) and Regional Housing Needs allocation
+requirements
+(\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13dd}{C.G.S.
+Sec. 8-13dd}). The guidance outlines datasets, analytical methods, and
+mapping standards that can be used to produce a consistent, statewide
+inventory of developable land.
 
 The document emphasizes that identifying land as ``developable'' does
 not obligate development, nor does exclusion from the inventory
 permanently restrict future development opportunities. Instead, the
 inventory serves as a foundational input to each municipality's Housing
-Growth Plan, supporting later phases such as suitability analysis and
-parcel-level evaluation. The developable land inventory is not a
-permanent designation of a property's development potential.
+Growth Plan, supporting other elements of the planning process. The
+developable land inventory is not a permanent designation of a
+property's development potential.
 
-\section*{Core Requirements}\label{core-requirements}
-\addcontentsline{toc}{section}{Core Requirements}
+The developable land inventory is only one element of the broader
+planning process required under these statutes. The diagram below shows
+how it fits within that larger analysis.
 
-\markright{Core Requirements}
+\begin{center}
+\pandocbounded{\includegraphics[keepaspectratio]{images/components.png}}
+\end{center}
 
-In the Housing Growth Plans, the following shall be included:
+\section*{Required Outputs}\label{required-outputs}
+\addcontentsline{toc}{section}{Required Outputs}
+
+\markright{Required Outputs}
+
+In the Housing Growth Plans, the following should be included:
 
 \begin{itemize}
 \item
   Three town-wide maps showing statutory exclusions, developable land,
-  vacant parcels, and potential redevelopment areas
+  vacant parcels, and potential redevelopment areas.
 \item
   A narrative methodology describing data sources, queries, processing
-  steps, and classification methods used in the analysis
+  steps, and classification methods used in the analysis.
 \end{itemize}
 
-\section*{Statutory Exclusions}\label{statutory-exclusions}
-\addcontentsline{toc}{section}{Statutory Exclusions}
+In the Regional Needs Assessment, the following should be included:
 
-\markright{Statutory Exclusions}
+\begin{itemize}
+\tightlist
+\item
+  A summary of developable land pursuant to Section 8‑13aa for use in
+  the Regional Housing Needs allocation.
+\end{itemize}
 
-\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{C.G.S. §
-8-13aa} defines five categories of land that must be excluded from the
-developable land inventory:
+\section*{Statutory Definitions}\label{statutory-definitions}
+\addcontentsline{toc}{section}{Statutory Definitions}
+
+\markright{Statutory Definitions}
+
+\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{C.G.S. Sec.
+8-13aa} defines what ``developable land'' is within the context of this
+planning exercise. In addition to areas that are commercially feasible
+for development, it outlines five categories of land that should be
+excluded from the developable land inventory:
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
@@ -381,15 +407,15 @@ and and help assess future housing capacity.
 
 \markright{Mapping Standards}
 
-The guidance specifies three required maps and recommendations for
-symbology:
+The guidance specifies three maps to be included in the Housing Growth
+Plans:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
   Statutory Exclusions Map
 \item
-  Developable vs.~Non-Developable Land Map
+  Developable Land Map
 \item
   Developable Land Summary Map, including vacant and
   redevelopment-potential parcels
@@ -400,8 +426,12 @@ symbology:
 
 \markright{Next Steps}
 
-The developable land inventory feeds directly into the Housing Growth
-Plan's suitability analysis and parcel and zone identification.
+The Developable Land Inventory is just one portion of the Housing Growth
+Planning process. While this is a required element in the Housing Growth
+Plans and the Regional Needs Assessments, separate analyses will apply
+locally defined factors that enable and limit development potential to
+narrow planning focus and prioritize site, neighborhoods, or zones for
+potential housing growth strategies.
 
 \bookmarksetup{startatroot}
 
@@ -409,32 +439,68 @@ Plan's suitability analysis and parcel and zone identification.
 
 \section{Purpose}\label{purpose}
 
-This documentation provides technical guidance for preparing the
-municipal developable land inventory required for inclusion in the
-Housing Growth Plans under
+This documentation provides technical guidance for preparing a municipal
+developable land inventory required under
 \href{https://cga.ct.gov/2026/sup/chap_124b.htm}{Connecticut General
-Statutes (C.G.S.) §§ 8-13bb and 8-13cc}. The inventory identifies land
-that meets the statutory definition of developable land in
-\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{C.G.S. §
-8-13aa} and serves as a foundational input to the Housing Growth Plan
-process. This guidance is intended to support a consistent and
-transparent analytical approach across municipalities.
+Statutes (C.G.S.) Sec. 8-13aa -- 8-13dd}. The developable land inventory
+is a preliminary, planning-level screening product for use in this
+specific planning process, not a permanent or legal designation of
+development potential.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
+This guidance serves as one of the statewide data tools that the CT GIS
+Office within the Office of Policy and Management (OPM) is directed to
+develop under statute, for use by municipalities and COGs, together with
+local data, in compiling the developable land inventory.
+
+\begin{quote}
+\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13dd}{C.G.S. Sec.
+8-13dd(g)}: On or before July 1, 2026, and every five years thereafter,
+the Geographic Information Systems Office within the Office of Policy
+and Management, in consultation and coordination with the regional
+councils of governments, shall develop \textbf{state-wide data tools for
+municipalities to use, together with local data, to compile an inventory
+of developable land}, as defined in section 8-13aa.
+\end{quote}
+
+The developable land inventory is used for two distinct statutory
+purposes:
+
+\begin{itemize}
+\item
+  \textbf{Housing Growth Plans} prepared by municipalities (C.G.S. Sec.
+  8-13bb) or regional councils of governments (COGs) (C.G.S. Sec.
+  8-13cc);
+
+  and
+\item
+  \textbf{Regional Needs Assessment allocations} (C.G.S. Sec. 8-13dd),
+  prepared exclusively by COGs
+\end{itemize}
+
+The inventory identifies land that meets the statutory definition of
+developable land in
+\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{C.G.S. Sec.
+8-13aa} and serves as a foundational input to both processes. This
+guidance is intended to support a transparent analytical approach across
+municipalities and COGs, while preserving flexibility in how each
+community arrives at its final inventory.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-warning-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
 \begin{minipage}[t]{5.5mm}
-\textcolor{quarto-callout-note-color}{\faInfo}
+\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}
 \end{minipage}%
 \begin{minipage}[t]{\textwidth - 5.5mm}
 
-\vspace{-3mm}\textbf{A note about developable land}\vspace{3mm}
+\vspace{-3mm}\textbf{A note about ``developable land''}\vspace{3mm}
 
 Identifying land as developable does not obligate anyone to pursue
 development on that land, nor does exclusion from the inventory limit
 future development opportunities outside the context of the Housing
-Growth Plan process. The developable land inventory is not a permanent
-designation of a property's development potential. Rather, it is a
-necessary step in preparing a Housing Growth Plan under C.G.S. §§ 8-13bb
-and 8-13cc.
+Growth Plan or Regional Needs Assessment process. The developable land
+inventory is not a permanent designation of a property's development
+potential. Rather, it is a necessary step in preparing a Housing Growth
+Plan under C.G.S. Sec. 8-13bb and 8-13cc and Regional Needs Assessment
+under C.G.S. Sec. 8-13dd.
 
 \end{minipage}%
 \end{tcolorbox}
@@ -444,64 +510,128 @@ and 8-13cc.
 This document is intended for municipal staff, councils of government or
 regional planning agencies, and consultants responsible for compiling,
 reviewing, or applying data for developable land inventories as part of
-the Housing Growth Plan process.
+the Housing Growth Plan or Regional Needs Assessment process.
 
 \section{Overview}\label{overview}
 
 This document describes the required outputs of the developable land
-inventory and provides technical guidance on recommended data sources,
-analytical methods, and mapping procedures. The guidance is designed to
-support a consistent, transparent, and repeatable approach across
-municipalities while allowing for the use of local data and professional
-judgment where appropriate.
+inventory for the Housing Growth Plans and Regional Needs Assessment
+allocations (see \href{outputs.qmd}{Section 2} for details on outputs).
+As described above, these two outputs share a common statutory
+definition of developable land (C.G.S. Sec. 8-13aa) but serve different
+purposes and may be prepared differently. This guidance provides
+technical guidance on optional data sources, analytical methods, and
+mapping procedures to help municipalities and COGs reach those outputs.
+The mapping standards in \href{maps.qmd}{Section 5} are applicable only
+to maps included in the Housing Growth Plans, as maps are not an
+expected output of Regional Needs Assessment allocations.
 
-For additional information on Housing Growth Plans and the role of the
-developable land inventory within that framework, municipalities should
-refer to the Housing Growth Plan Guidance {[}link coming soon{]}.
+Producing both the spatial analysis of the inventory and the
+accompanying maps will require Geographic Information Systems (GIS), a
+category of software used to store, analyze, and display data in
+relation to its geographic location.
 
-The sections that follow describe each statutory exclusion from
-developable land and the recommended methods for identifying and
-documenting those exclusions. The document also outlines approaches for
-identifying vacant and potentially redevelopable land, and provides
-guidance for assembling the final inventory and associated mapping
-products.\\
+For both the Housing Growth Plans and the Regional Needs Assessment, the
+developable land inventory process is primarily analytical in nature,
+involving the identification and documentation of areas that meet the
+statutory definition of developable land through the application of
+knowledge, data, and methodology. Regarding the Housing Growth Plan maps
+specifically, the map itself is not the mechanism by which developable
+areas are identified, nor does it constitute a determination of a
+property's development potential. Rather, it serves as a visual
+representation of the underlying analysis, allowing the results of that
+analysis to be verified and understood spatially. Because the
+developable land inventory is a spatial exercise, a map demonstrates
+that the statutory criteria under C.G.S. Sec. 8-13aa were applied
+consistently across a municipality.
+
+\textbf{Municipalities and COGs have significant latitude in the data
+and methods used to reach these outputs. This guidance does not
+prescribe a single required methodology, but instead offers a suggested
+framework that communities may adopt, adapt, or depart from, so long as
+the resulting inventory satisfies the statutory definition and meets the
+required outputs described in this document. Local data and professional
+judgment are expected to play a role in tailoring the analysis to local
+conditions.}
+
+For additional information on the program initiatives created by the
+2025 Act Concerning Housing Growth and the role of the developable land
+inventory within that framework, users should refer to the
+\href{https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898}{OPM
+Office of Responsible Growth 2025 Act Concerning Housing Growth}
+website.
 
 \section{Use of this Guidance}\label{use-of-this-guidance}
 
-This document provides recommended methodologies for preparing a
-developable land inventory under C.G.S. §§ 8-13aa, 8-13bb, and 8-13cc.
-Municipalities may use alternative data sources or analytical approaches
-where appropriate, provided that the resulting inventory is consistent
-with the requirements of these statutes and is adequately documented.
+Use this document to identify suggested dataset options and
+methodologies for arriving at the required outputs of the developable
+land inventory. Municipalities and COGs are not required to follow the
+specific data sources or methods suggested in this document.
+\textbf{Alternative approaches are acceptable}, provided the resulting
+inventory: (1) is consistent with the statutory definition of
+developable land under C.G.S. Sec. 8-13aa; (2) satisfies the
+\href{outputs.qmd}{required outputs} described in this document,
+including the required maps; and (3) is adequately documented so that
+the methodology and results are transparent and reproducible.
 
 \bookmarksetup{startatroot}
 
-\chapter{Required Outputs}\label{required-outputs}
+\chapter{Required Outputs}\label{required-outputs-1}
 
-The following outputs are required for inclusion in the Housing Growth
-Plan report as part of the developable land inventory:
+Per these guidelines, the following represent the outputs expected for
+the Housing Growth Plan report and Regional Housing Needs allocation.
+The approach used to generate these outputs is at the discretion of the
+COG or municipality; sections \href{stat_def.qmd}{3} and
+\href{vac_redev.qmd}{4} suggest a framework along with supporting data
+and resources for doing so.
+
+\section{Housing growth plans}\label{housing-growth-plans}
+
+C.G.S. Sections 8-13bb(d) and (i), and 8-13cc(b) require OPM to issue
+guidelines on the ``form and level of detail'' required of Housing
+Growth Plans (HGPs) as well as the formats, mapping standards and
+standardized metrics for annual reporting on HGP implementation. The
+Secretary may amend these guidelines from time to time. These
+\href{https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Housing-Growth-Plans-Page}{Housing
+Growth Plan Guidelines} can be viewed on the
+\href{https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Homepage}{2025
+Act Concerning Housing Growth web page} from OPM.
+
+Per the Housing Growth Plan Guidelines, the following outputs are
+required for inclusion in the Housing Growth Plan report as part of the
+developable land inventory:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Three town-wide maps visualizing the developable land, statutory
-  exclusions, vacant parcels, and areas with redevelopment potential
-  (see \href{map.qmd}{Section 5} for more details on mapping standards)
+  Three town‑wide maps produced in accordance with the mapping standards
+  outlined in \href{map.qmd}{Section 5: Creating the Maps}, illustrating
+  (1) statutory exclusions, (2) developable land, (3) a developable land
+  summary, including vacant parcels and areas with redevelopment
+  potential.
 \item
   Narrative description of the methodology used to develop the inventory
   of developable land. This should include how vacant and potential
   redevelopment areas were identified, a summary of data sources used,
   how datasets were queried and processed, and the methods used to
-  classify land into statutory exclusion categories.
+  classify land.
 \end{enumerate}
+
+\section{Regional housing needs
+program}\label{regional-housing-needs-program}
+
+\ul{C.G.S. Sec. 8-13dd}: The results of this process of identifying
+qualifying developable land per C.G.S. Section 8-13aa are used in
+calculating the Regional Housing Needs allocation under C.G.S. Section
+8-13dd(c)(3).
 
 \bookmarksetup{startatroot}
 
-\chapter{Statutory Exclusions}\label{sec-statutory-exclusions}
+\chapter{Statutory Definitions}\label{sec-statutory-exclusions}
 
-\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{CGS §
-8-13aa} defines what developable land is and is not in the context of
-this planning process:
+\href{https://cga.ct.gov/2026/sup/chap_124b.htm\#sec_8-13aa}{C.G.S. Sec.
+8-13aa} defines developable land and what is not considered to be within
+the context of this planning process:
 
 \begin{quote}
 \emph{(5) ``Developable land'' means land, including any land owned by
@@ -523,14 +653,37 @@ contiguous land that are unsuitable for development due to topographic
 features, such as steep slopes;}
 \end{quote}
 
-This developable land inventory is a high-level description of land with
-a municipality that has opportunity for development or redevelopment of
-residential or mixed-use development.
+This developable land inventory is intended as a high-level GIS
+screening tool to support the preparation of Housing Growth Plans. The
+inventory applies the definition in C.G.S. Sec. 8-13aa and provides a
+framework for identifying land that should be evaluated further through
+local planning and feasibility analysis. The inventory and associated
+GIS screening methodology are not intended to serve as a final
+determination of whether individual areas or parcels are developable or
+redevelopable.
+
+\textbf{Commercially reasonable assumptions}: The statute requires that
+feasibility determinations for developable land be grounded in
+commercially reasonable assumptions. This standard is inherently context
+dependent. What counts as a commercially reasonable assumption in one
+municipality or region may not hold true in another, given differences
+in market conditions, infrastructure capacity, land values, and local
+development patterns. Because of this variability, this guidance does
+not attempt to define a single statewide threshold for what makes an
+assumption commercially reasonable. Municipalities and COGs should apply
+local market knowledge and professional judgment when assessing
+feasibility, consistent with the statutory standard.
+
+The GIS methodology described in this guidance focuses on identifying
+land that is statutorily excluded from further developability analysis.
+Land that is not excluded should not automatically be interpreted as
+developable. Rather, it represents land that may warrant additional
+evaluation during preparation of the Housing Growth Plan and Regional
+Needs Assessment using locally informed, commercially reasonable
+assumptions.
 
 Under the statute, several types of land are defined as areas that
-should be excluded from the developable land inventory for the purposes
-of Housing Growth Plans. The statutory exclusions identified in CGS §
-8-13aa are:
+should be excluded from these developable land inventories:
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi}.}
@@ -545,7 +698,7 @@ of Housing Growth Plans. The statutory exclusions identified in CGS §
   development
 \item
   Wetlands or watercourses, as defined in the Wetlands and Watercourses
-  Act (CGS Chapter 440)
+  Act (C.G.S. Chapter 440)
 \item
   Contiguous land areas of 0.5 acres or more that are unsuitable for
   development due to steep slopes or other topographic conditions
@@ -554,18 +707,20 @@ of Housing Growth Plans. The statutory exclusions identified in CGS §
 In addition to incorporating these categories, the final inventory may
 also document vacant land and land with potential for redevelopment.
 These areas provide important context for the development of other
-pieces of the Housing Growth Plans, which will use \ul{suitability
-analyses} {[}link coming soon{]} to complete a more detailed assessment
-on capacity for future housing growth. Guidance for identifying and
-analyzing vacant and potentially redevelopable land is provided in
+elements of the Housing Growth Plans, in which
+\href{https://housingmaps.ct.gov/pages/suitability-analysis}{suitability
+analyses} may be used to complete a more detailed assessment on capacity
+for future housing growth. Suggestions for identifying and analyzing
+vacant and potentially redevelopable land are provided in
 \hyperref[0]{Section 4}.
 
-This section outlines each statutory exclusion category, identifies
-recommended datasets for analysis, and provides technical guidance for
-preparing those datasets for inclusion in the final developable land
-inventory. The intent is to support consistent data preparation across
-municipalities and ensure that the resulting outputs meet the mapping
-standards described in \href{map.qmd}{Section 5}.
+The sections below describe each statutory exclusion category, identify
+potential datasets for GIS analysis, and provide technical guidance for
+preparing those datasets. These procedures are intended to support
+consistent statewide screening and mapping of statutory exclusions. They
+are not intended to replace the detailed municipal and regional analysis
+required to determine whether land ultimately meets the statutory
+definition of developable land.
 
 \textbf{Workflow Overview}
 
@@ -594,8 +749,19 @@ symbolized in accordance with the mapping standards described in
 area identified in this section. Inventories are recommended to include
 vacant land from \href{vac_redev.qmd}{Section 4.1} and land for
 potential redevelopment from \href{vac_redev.qmd}{Section 4.2}, since
-these components will be used in subsequent phases of the Housing Growth
-Plan analyses.
+these components will be used in subsequent phases of the analyses.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
+
+If using aerial imagery for review, high‑resolution statewide imagery
+(leaf‑off, 4‑band, 3‑inch pixel) is available through CT ECO for
+\href{https://maps.cteco.uconn.edu/download/}{download} or through
+\href{https://maps.cteco.uconn.edu/map-services/}{online services}. More
+information can be found on the
+\href{https://maps.cteco.uconn.edu/data/flight2023/}{2023 Aerial Imagery
+and Elevation} web page.
+
+\end{tcolorbox}
 
 \section{Land already committed to public use or purpose (public or
 private)}\label{land-already-committed-to-public-use-or-purpose-public-or-private}
@@ -613,7 +779,7 @@ Examples of land committed to public use or purpose include:
 \begin{itemize}
 \tightlist
 \item
-  Public schools and school campuses
+  Active public schools and school campuses
 \item
   Municipal buildings and facilities (police, fire, emergency services,
   libraries, community centers, public works, transfer stations)
@@ -638,14 +804,17 @@ Examples of land committed to public use or purpose include:
   owned water supply reservoir subject to a public easement)
 \end{itemize}
 
-\subsection{Recommended Datasets}\label{recommended-datasets}
+\subsection{Data Resources}\label{data-resources}
 
-There is no single comprehensive dataset of publicly committed land in
-Connecticut. The following sources, used in combination, should capture
-qualifying parcels and land area. Some overlap across sources is
-expected, but each may also identify areas the others miss. See the
-``Technical Guidance'' section below for more details about using,
-filtering, spatializing, and querying these datasets.
+There is no single statewide comprehensive dataset of publicly committed
+land in Connecticut. The sources below, used in combination, provide a
+starting point to capture qualifying land area. Where more detailed or
+up-to-date local data is available, it should be prioritized over the
+statewide sources provided here, as local data will generally offer
+greater accuracy and specificity for a given municipality. Some overlap
+across sources is expected, but each may also identify areas the others
+miss. See the ``Technical Guidance'' section below for more details
+about using, filtering, spatializing, and querying these datasets.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -664,19 +833,27 @@ filtering, spatializing, and querying these datasets.
 
 \subsubsection{Local data}\label{sec-local-data}
 
-Utility parcel data, local zoning or public facilities layers, and local
-institutional datasets may be available from your municipality or
-utility providers.
+Utility data, local zoning or public facilities layers, local
+institutional datasets, regional hazard mitigation plans, and other
+locally maintained data may be available at the local level. Where
+available, this local data should take precedence over the statewide
+sources listed below, as it is likely to be more current, more granular,
+and better tailored to local context. The statewide datasets are
+intended to fill gaps where local data is unavailable or incomplete, not
+to supersede it.
 
 \subsubsection{Parcel and CAMA Data}\label{sec-parcel-and-cama-data}
 
-We recommend utilizing the parcel dataset. The CT GIS Office aggregates
-municipal parcel data annually. While locally published datasets may
-also be available, the statewide aggregation is publicly accessible
-through the CT Geodata Portal and the CT Housing Data Hub. This data is
-not edited or transformed by the CT GIS Office; questions about data
-quality or completeness should be directed to the local town assessor.
-For more information on CT parcel data aggregation, see the
+The CT GIS Office aggregates municipal parcel data annually. While
+locally published datasets may also be available, the statewide
+aggregation is publicly accessible through the CT Geodata Portal and the
+CT Housing Data Hub. Although this analysis is not conducted at the
+parcel level, parcel and CAMA data include useful attributes (such as
+ownership type, land use codes, and property classifications) that can
+help identify areas likely to qualify. This data is not edited or
+transformed by the CT GIS Office; questions about data quality or
+completeness should be directed to the local town assessor. For more
+information on CT parcel data aggregation, see the
 \href{https://geodata.ct.gov/pages/parcels}{CT Geodata Portal page on
 parcels}.
 
@@ -805,8 +982,6 @@ include:
 \tightlist
 \item
   ``ROW''
-\item
-  ``Rights of Way''
 \end{itemize}
 
 \textbf{Example query logic:}
@@ -814,20 +989,18 @@ include:
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{STATE\_USE\_DESCRIPTION }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%ROW\%\textquotesingle{}}
-
-\KeywordTok{OR}\NormalTok{ STATE\_USE\_DESCRIPTION }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%RIGHTS OF WAY\%\textquotesingle{}}
 \end{Highlighting}
 \end{Shaded}
 
-Because parcel data are compiled from municipal assessor records,
+Because parcel data is compiled from municipal assessor records,
 terminology and attribute completeness vary considerably across
 jurisdictions. As a result, some municipalities may not consistently
 identify rights-of-way using standardized naming conventions or parcel
 attributes.
 
 Where ROW polygons are present but not clearly identified through
-attribute queries, additional review methods may be necessary,
-including:
+attribute queries, additional review methods may be used, where
+appropriate, including:
 
 \begin{itemize}
 \tightlist
@@ -970,7 +1143,7 @@ Examples include:
   Agricultural preservation land protected through conservation programs
 \end{itemize}
 
-\subsection{Recommended Datasets}\label{recommended-datasets-1}
+\subsection{Recommended Datasets}\label{recommended-datasets}
 
 There is no single comprehensive dataset of open space, parks, and
 recreation areas in Connecticut. The following sources, used in
@@ -1011,19 +1184,30 @@ datasets.
 
 \subsubsection{Local data}\label{sec-local-data2}
 
-Utility parcel data, local zoning or public facilities layers, and local
-institutional datasets may be available from your municipality or
-utility providers.
+Open space inventories, parks and recreation department data, land trust
+records, POCD (Plan of Conservation and Development) land use and open
+space maps, and other municipally or regionally maintained datasets may
+be available locally. Where available, this data should take precedence
+over the statewide sources listed below, as it is likely to be more
+current, more granular, and better tailored to local context. The
+statewide datasets are intended to fill gaps where local data is
+unavailable or incomplete, not to supersede it.
 
 \subsubsection{Land trust inventories}\label{sec-land-trust-inventories}
 
-Land owned or permanently protected by land trusts should generally be
-considered protected open space and excluded from developable land
-inventories. No comprehensive statewide GIS dataset exists for land
-trust holdings in Connecticut.The Connecticut Land Conservation Council
-(CLCC) maintains a statewide directory of Connecticut land trusts that
-can be used to identify organizations operating within a municipality or
-region.
+Land trusts may own land outright, hold a conservation easement on land
+owned by another party, or both. Not all land owned by a land trust is
+permanently protected. Ownership alone does not guarantee a conservation
+easement or other permanent restriction is in place. Land trust holdings
+should only be included in this inventory where the land is confirmed to
+be protected by a conservation easement or other permanent legal
+restriction. Land trust-owned land that is not protected by such a
+restriction should not be included.
+
+No comprehensive statewide GIS dataset exists for land trust holdings in
+Connecticut. The Connecticut Land Conservation Council (CLCC) maintains
+a statewide directory of Connecticut land trusts that can be used to
+identify organizations operating within a municipality or region.
 
 \textbf{Source:}
 \href{https://ctconservation.org/what-is-a-land-trust/\#maps}{CLCC Land
@@ -1033,17 +1217,21 @@ The
 \href{https://housingmaps.ct.gov/datasets/ctmaps::connecticut-protected-open-space-parcels/about}{Connecticut
 Open Space Parcels (CT Housing Data Hub)} layer includes land trusts as
 identified through ownership from the parcel and CAMA dataset. See the
-\textbf{Parcel and CAMA Data} section below for more details.
+\hyperref[sec-parcel-and-cama-data2]{\textbf{Parcel and CAMA Data}}
+section below for more details.
 
 \subsubsection{Parcel and CAMA Data}\label{sec-parcel-and-cama-data2}
 
-We recommend utilizing the parcel dataset. The CT GIS Office aggregates
-municipal parcel data annually. While locally published datasets may
-also be available, the statewide aggregation is publicly accessible
-through the CT Geodata Portal and the CT Housing Data Hub. This data is
-not edited or transformed by the CT GIS Office; questions about data
-quality or completeness should be directed to the local town assessor.
-For more information on CT parcel data aggregation, see the
+The CT GIS Office aggregates municipal parcel data annually. While
+locally published datasets may also be available, the statewide
+aggregation is publicly accessible through the CT Geodata Portal and the
+CT Housing Data Hub. Although this analysis is not conducted at the
+parcel level, parcel and CAMA data include useful attributes (such as
+ownership type, land use codes, and property classifications) that can
+help identify areas likely to qualify. This data is not edited or
+transformed by the CT GIS Office; questions about data quality or
+completeness should be directed to the local town assessor. For more
+information on CT parcel data aggregation, see the
 \href{https://geodata.ct.gov/pages/parcels}{CT Geodata Portal page on
 parcels}.
 
@@ -1097,7 +1285,7 @@ Description
 Queries}}}{B. State Use and State Use Description Queries}}\label{b.-state-use-and-state-use-description-queries-1}
 
 Search state use and state use description for open space and recreation
-terms, including::
+terms, including:
 
 \begin{itemize}
 \tightlist
@@ -1113,11 +1301,11 @@ terms, including::
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{OWNER\_NAME }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%Land trust\%\textquotesingle{}}
-
-\KeywordTok{OR}\NormalTok{ OWNER\_NAME }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%Conservation\%\textquotesingle{}}
-
-\KeywordTok{OR}\NormalTok{ OWNER\_NAME }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%Land alliance\%\textquotesingle{}}
+\NormalTok{STATE\_USE\_DESCRIPTION }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%OPEN\%\textquotesingle{}}
+    
+\KeywordTok{OR}\NormalTok{ STATE\_USE\_DESCRIPTION }\KeywordTok{LIKE} \StringTok{\textquotesingle{}\%FOREST\%\textquotesingle{}}
+    
+\KeywordTok{OR}\NormalTok{ STATE\_USE\_DESCRIPTION }\KeywordTok{LIKE}\NormalTok{ \%REC\%}\StringTok{\textquotesingle{}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1142,7 +1330,7 @@ repository}.
 \subsubsection{CT DEEP Property}\label{sec-ct-deep-property}
 
 CT DEEP publishes a polygon feature layer representing property that
-compromises DEEP facilities such as state forests, parks, and wildlife
+comprises DEEP facilities such as state forests, parks, and wildlife
 management areas.
 
 \textbf{Dataset:}
@@ -1235,6 +1423,43 @@ more accurate and current open space parcel data, please see the
 Protected Open Space and the Protected Open Space Phase 1 feature
 classes. This should be used as reference only.
 
+\subsubsection{Connecticut Greenways}\label{connecticut-greenways}
+
+\textbf{Dataset}:
+\href{https://housingmaps.ct.gov/datasets/CTDEEP::official-designated-connecticut-greenways/about}{Official
+Designated Connecticut Greenways (CT Housing Data Hub)}
+
+The CT Greenways Council and Department of Energy \& Environmental
+Protection have designated these greenways of State significance based
+upon established criteria. CT Public Act 95-335 defines a greenway as a
+``corridor of open space'' that:~
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  may protect natural resources, preserve scenic landscapes and
+  historical resources or offer opportunities for recreation or
+  non-motorized transportation;
+\item
+  may connect existing protected areas and provide access to the
+  outdoors;
+\item
+  may be located along a defining natural feature, such as a waterway,
+  along a man-made corridor, including an unused right of way,
+  traditional trail routes or historic barge canals; or~
+\item
+  may be a green space along a highway or around a village.
+\end{enumerate}
+
+While this dataset represents Connecticut Greenways as polyline features
+rather than polygons delineating the full extent of the designated
+corridors, it provides a useful reference for identifying their general
+geographic locations and alignments. The line features are intended to
+represent the approximate routes of the designated greenways and should
+not be interpreted as the full area or boundaries of the protected
+corridors.
+
 \subsubsection{USGS Protected Areas Database of the United
 States}\label{sec-usgs-protected-areas-database-of-the-united-states}
 
@@ -1290,11 +1515,13 @@ Examples include:
 \subsection{Guidance on deed-restricted
 properties}\label{guidance-on-deed-restricted-properties}
 
-To the extent that municipality-wide restriction data is digitially
-available, include it in the developable lands inventory at this stage.
-Detailed parcel-level research on specific deed-restrictions will become
-important in other parts of the Housing Growth Plan when specific sites
-are being evaluated.
+To the extent that municipality-wide restriction data is digitally
+available, it should be incorporated into the developable lands
+inventory at this stage. Municipalities are not required by statute to
+undertake deed research to obtain this information. Detailed
+parcel-level research on specific deed restrictions may hold greater
+importance in other elements of the housing growth planning process when
+specific areas are evaluated.
 
 \section{Wetlands or watercourses, as defined in the Wetlands and
 Watercourses Act (CGS Chapter
@@ -1332,7 +1559,7 @@ CT DEEP,
 are Inland Wetlands and Watercourses Defined in Connecticut?}
 \end{quote}
 
-\subsection{Recommended Datasets}\label{recommended-datasets-2}
+\subsection{Recommended Datasets}\label{recommended-datasets-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1473,10 +1700,12 @@ some of these areas may be technically developable, towns may consider
 excluding them from the developable land inventory for the purposes of
 this planning analysis.
 
-\subsection{Recommended Datasets}\label{recommended-datasets-3}
+\subsection{Recommended Datasets}\label{recommended-datasets-2}
 
 \begin{itemize}
 \tightlist
+\item
+  \hyperref[sec-local-data-topo]{Local Data}
 \item
   \hyperref[sec-connecticut-steep-slope-areas]{Connecticut Steep Slope
   Areas}
@@ -1487,6 +1716,16 @@ this planning analysis.
 \end{itemize}
 
 \subsection{Technical Guidance}\label{technical-guidance-3}
+
+\subsubsection{Local Data}\label{sec-local-data-topo}
+
+Local slope analyses, soil surveys, geotechnical studies, and other
+municipally or regionally maintained topographic data may be available
+locally. Where available, this data can take precedence over the
+statewide sources listed below, as it may be more current, more
+granular, and better tailored to local site conditions. The statewide
+datasets are intended to fill gaps where local data is unavailable or
+incomplete, not to supersede it.
 
 \subsubsection{Connecticut Steep Slope
 Areas}\label{sec-connecticut-steep-slope-areas}
@@ -1566,19 +1805,25 @@ Geologic Maps}.
 Redevelopment}\label{identifying-vacant-and-potential-land-for-redevelopment}
 
 Beyond the statutory requirements, identifying vacant and potentially
-redevelopable parcels provides important context for the Housing Growth
-Plans by supporting suitability analyses in subsequent phases.
+redevelopable areas provides important context for this planning phase
+and supports analyses of the development potential of identified areas.
+The inventory produced during this phase serves as a foundation for
+further study, not a final determination of development potential.
 
-This section describes queries developed to identify the parcels within
-these categories and a set of analytical approaches that can be used to
-evaluate redevelopment potential. Together, these methods offer a
-flexible toolkit for recognizing parcels that might support future
-housing development and for tailoring analyses to local priorities.
+This section describes suggested queries for identifying parcels within
+these categories, along with a set of analytical approaches that can be
+used to evaluate redevelopment potential. As with the rest of this
+guidance, these methods are offered as a flexible toolkit rather than a
+required methodology, allowing municipalities and COGs to recognize
+parcels that might support future housing development while tailoring
+the analysis to local priorities and conditions.
 
-It is recommended to carefully review outputs using local knowledge,
-supplemental data sources, and/or aerial imagery.
+\textbf{Regardless of the approach used, it is recommended that outputs
+be carefully reviewed using local knowledge, supplemental data sources,
+and/or aerial imagery.}
 
-For reference, the following datasets are used in the analyses:
+For reference, the following datasets are used in the following
+analyses:
 
 \textbf{Parcel geometry}:
 \href{https://housingmaps.ct.gov/datasets/ctmaps::connecticut-cama-and-parcel-layer/about}{Connecticut
@@ -1588,6 +1833,8 @@ CAMA and Parcel Layer (CT Housing Data Hub)}
 \href{https://data.ct.gov/Local-Government/2025-Connecticut-Parcel-and-CAMA-Data/rny9-6ak2/about_data}{2025
 Connecticut Parcel and CAMA Data (CT Open Data Portal)}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
+
 If using aerial imagery for review, high‑resolution statewide imagery
 (leaf‑off, 4‑band, 3‑inch pixel) is available through CT ECO for
 \href{https://maps.cteco.uconn.edu/download/}{download} or through
@@ -1596,13 +1843,15 @@ information can be found on the
 \href{https://maps.cteco.uconn.edu/data/flight2023/}{2023 Aerial Imagery
 and Elevation} web page.
 
+\end{tcolorbox}
+
 \section{Vacant Parcels}\label{vacant-parcels}
 
 Vacant parcels represent land that is either currently undeveloped or
-previously developed but now considered vacant, and they may present
-direct development opportunities. While no statewide dataset of vacant
-parcels exists, the statewide CAMA and parcel dataset can be queried to
-identify parcels labeled as vacant.
+previously developed but now considered vacant. These parcels may
+present direct development opportunities. While no comprehensive
+statewide dataset of vacant parcels exists, the statewide CAMA and
+parcel dataset can be queried to identify parcels labeled as vacant.
 
 \begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-warning-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
 
@@ -1675,21 +1924,34 @@ Previously contaminated or industrial sites undergoing or eligible for
 cleanup.
 \end{quote}
 
-The available data describing brownfield site locations is provided as
-an .xlsx file maintained by the Connecticut Department of Energy \&
-Environmental Protection (CT DEEP).
+The available data describing brownfield site locations is provided by
+the Connecticut Department of Energy \& Environmental Protection (CT
+DEEP). For more information, see the
+\href{https://portal.ct.gov/deep/remediation--site-clean-up/brownfields/brownfields-site-inventory}{CT
+DEEP Connecticut Brownfields Inventory} web page. This web page provides
+the locations in a tabular format in a .xlsx file. In addition the data
+is available as a geospatial layer as points, linked below.
 
 \textbf{Dataset}:
-\href{https://portal.ct.gov/deep/remediation--site-clean-up/brownfields/brownfields-site-inventory}{Connecticut
-Brownfields Inventory (CT DEEP)}
+\href{https://housingmaps.ct.gov/datasets/CTDEEP::brownfields-2025/about}{Brownfields}
+
+\textbf{Inclusion of a brownfield site in the inventory does not
+automatically indicate that the site is feasible for redevelopment.}
+Brownfield sites often require detailed environmental evaluation and may
+not be financially viable to remediate to residential standards.
+Municipalities and COGs should carefully review brownfield sites using
+local knowledge and supplemental data before including them as
+potentially redevelopable, and should be mindful of environmental
+justice considerations.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Spatializing the data}: Since this data is provided in a
-  tabular format, it is necessary to spatialize it before processing
-  with further analysis. While geocoding is feasible, it is recommended
-  to use the Latitude and Longitude fields to create points
+  \textbf{Spatializing the data}: If using the data in a tabular (.xlsx)
+  format, it is necessary to spatialize it before processing with
+  further analysis. If using the geospatial points layer, this step can
+  be skipped. While geocoding to the address is feasible, it is
+  recommended to use the Latitude and Longitude fields to create points
   corresponding to each brownfield site. The CRS should be NAD 83
   Connecticut State Plane (2011). The following resources provide
   details on translating the tabular latitude and longitude data into
@@ -1707,8 +1969,8 @@ Brownfields Inventory (CT DEEP)}
     Point Layer from Table}
   \end{itemize}
 \item
-  Identifying brownfield parcels: Next, use the points to identify
-  parcels that contain brownfield sites. This may be achieved with
+  \textbf{Identifying brownfield parcels}: Use the points to identify
+  the parcel geometry of the brownfield sites. This may be achieved with
   various queries, summary tools, or join tools that utilize spatial
   overlap. The following resources provide details and options for this
   process:
@@ -2050,8 +2312,8 @@ this analysis.
   ``EYB'' (Effective Year Built) field: The building's effective age,
   factoring in remodeling and renovations.
 \item
-  ``Depreciation'' field: Percent values indicating the amount of
-  depreciation a building has experienced.
+  ``Condition Description'' field: Ordinal, categorical data indicating
+  the physical condition of a building.
 \end{itemize}
 
 It is important to note that there are no statewide criteria for
@@ -2067,16 +2329,17 @@ property records.
 \item
   \textbf{Construction and renovation year clustering analysis}
 
-  This analysis uses a multivariate clustering tool in GIS to group
-  parcels based on three fields simultaneously: original construction
-  date (AYB), effective building age (EYB), and physical deterioration
-  (Depreciation). Rather than applying a single threshold to one
-  variable, multivariate clustering evaluates all three fields at once,
-  automatically grouping parcels that share similar combinations of age,
-  renovation history, and condition. The result is multiple groups of
-  parcels, one of which will represent the oldest, least-renovated, and
-  most deteriorated buildings in the study area, which are the parcels
-  most likely to be candidates for rehabilitation or redevelopment.
+  This analysis uses a multivariate clustering tool to group parcels
+  based on three fields simultaneously: original construction date
+  (AYB), effective building age (EYB), and physical deterioration
+  (Condition Description). Rather than applying a single threshold to
+  one variable, multivariate clustering evaluates all three fields at
+  once, automatically grouping parcels based on combinations of age,
+  renovation history, and physical condition. The result is multiple
+  groups of parcels, one of which will represent aged, infrequently
+  renovated, and deteriorated buildings within the study area, which are
+  the parcels most likely to be candidates for rehabilitation or
+  redevelopment.
 
   \textbf{Why multivariate clustering?}
 
@@ -2084,22 +2347,22 @@ property records.
   construction year) would miss properties that are old but have been
   well-maintained, or flag properties that are deteriorated but have
   been recently renovated. A multivariate analysis using the ``AYB'',
-  ``EYB'', and ``Depreciation'' fields together can be used to flag
-  groups of parcels with high redevelopment potential.
+  ``EYB'', and ``Condition Description'' fields together can be used to
+  flag groups of parcels with high redevelopment potential.
 
-  It is also important to use a clustering method that does not rely on
-  spatial relationships between parcels, meaning one that groups parcels
-  based purely on shared traits rather than proximity or adjacency.
-  Spatial clustering methods, such as K-nearest neighbor (KNN) or Queen
-  contiguity, which would traditionally be used for parcel data using
-  polygon geometry, identify parcels based on how close they are to each
-  other or whether they share edges or corners. Because the parcel layer
-  may be segmented by missing data, these methods will fail or produce
-  inaccurate clusters by attempting to connect parcels across large
-  gaps. Instead, a non-spatial multivariate clustering method ensures
-  that all parcels with available data are assigned to a cluster with
-  shared features, regardless of where they are located. For more
-  insight into these methods and their limitations:
+  It is important to avoid clustering methods that rely on spatial
+  relationships between parcels, including proximity or adjacency.
+  Spatial clustering methods, such as K-nearest neighbor (KNN)
+  algorithms or techniques informed by Queen contiguity, would
+  traditionally be used for parcel data using polygon geometry. These
+  identify parcels based on how close they are to each other or whether
+  they share edges or corners. Because the parcel layer may be segmented
+  by missing data, these methods will fail or produce inaccurate
+  clusters by attempting to connect parcels across large gaps. In
+  contrast, a non-spatial multivariate clustering method ensures that
+  all parcels with available data are assigned to a cluster with shared
+  features, regardless of where they are located. For more insight into
+  spatial methods and their limitations:
 
   \begin{itemize}
   \tightlist
@@ -2117,14 +2380,14 @@ property records.
     Clusters}
   \end{itemize}
 
-  Instead, it is recommended to use a multivariate clustering tool that
-  relies only on the presence of shared traits. These tools identify
-  optimized seed locations, or initial parcels, by maximizing their
-  initial distance from each other, then repeatedly adjusting these
-  seeds to minimize variability within clusters and increase variability
-  between clusters. In this way, all parcels with available data are
-  assigned to a cluster with shared features. Simplified, the process
-  is:
+  Therefore, it is recommended to use a solely trait-based multivariate
+  clustering tool. These tools identify optimized seed locations, around
+  which clusters will be built, by maximizing their initial distance
+  from each other. The tool then repeatedly adjusts these seeds to
+  minimize trait variability within clusters and maximize trait
+  variability between clusters. In this way, all parcels with available
+  data are assigned to a cluster with shared features. Simplified, the
+  process is:
 
   \emph{assign seeds → recompute and adjust seed location → repeat until
   stable}
@@ -2151,8 +2414,6 @@ property records.
   \item
     K-means algorithm
   \item
-    4 seeds (producing 4 clusters)
-  \item
     Optimized seeds
   \end{itemize}
 
@@ -2162,8 +2423,98 @@ property records.
   accordingly, K-means is the recommended algorithm for this analysis
   and is also the default option for the QGIS Attribute Based Clustering
   Plugin.
+
+  Within these tools, municipalities must also choose the number of
+  clusters to evaluate. Considerations when choosing number of clusters
+  (K) include:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Additional statistical measures (pseudo-F statistic)
+  \item
+    Interpretability
+  \item
+    Validation against imagery layers
+  \item
+    Local knowledge
+  \end{itemize}
+
+  The chart below is a built-in product of the Multivariate Clustering
+  Tool in ArcGIS Pro. The local peaks indicate a higher pseudo-F
+  statistic, corresponding to greater distinctiveness between clusters
+  and more meaningful data separation.
+
+  \pandocbounded{\includegraphics[keepaspectratio]{images/kmeans.png}}
+
+  Based solely on the chart, the most appropriate number of clusters
+  would be 4 or 8. In general, a larger number of clusters means that a
+  smaller, more selective subset of parcels will be identified. While 8
+  clusters may offer a more refined analysis and statistically stronger
+  results, 4 clusters offer simplicity and ease of interpretation.
+
+  For construction and renovation year clustering analyses, it is
+  generally recommended to evaluate results from 3 to 6 clusters. This
+  range should be sufficient to capture meaningful variations in housing
+  characteristics while maintaining interpretability. Therefore, the
+  selection of appropriate number of clusters (K) does not have to rely
+  solely on statistical measures but also on the practicality of the
+  resulting groups. In addition to these considerations, it is important
+  to check whether the redevelopment candidates make sense when mapped
+  and validated against other data such as imagery.
+
+  The multivariate analysis may need to be run multiple times to settle
+  on the most suitable number of clusters. When evaluating analysis
+  outputs, it is important to verify whether each cluster represents a
+  distinct and understandable housing profile based on the three fields
+  of interest. ~
 \item
   \textbf{Data preparation}
+
+  Prior to running a multivariate clustering analysis, municipalities
+  should translate the categorical Condition Description field into a
+  new field of quantitative data, with buildings in poorer condition
+  receiving lower numerical scores. Municipalities may need to evaluate
+  Condition Description data in the context of their individual
+  assessing standards to accurately translate them to numbers, as there
+  are no statewide standards for this field. Additionally, the data may
+  need to be cleaned by removing inconsistent capitalization, spelling,
+  or spacing prior to creating a new field.
+
+  Example numerical classification dictionary:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ``Very Poor'': 1
+  \item
+    ``Poor'': 2 ''
+  \item
+    Average-``: 3
+  \item
+    ``Average'': 4
+  \item
+    ``Average+'': 5
+  \item
+    ``Good'': 6
+  \item
+    ``Very Good'': 7
+  \item
+    ``Excellent'': 8
+  \end{itemize}
+
+  If the multivariate clustering tool in a municipality's software of
+  choice does not automatically standardize data, it is necessary to
+  standardize the EYB, AYB, and numerically transformed Condition
+  Description fields due to scale differences.
+
+  Within the Connecticut CAMA and Parcel Layer, the AYB and EYB fields
+  may include null placeholder values in the form of extremely low or
+  high numbers. Accordingly, municipalities should evaluate the
+  distribution of these values in their CAMA data, identify any outliers
+  or apparent null placeholders, verify these against their oldest
+  historical buildings, and filter this data out prior to running the
+  clustering analysis.
 
   Within the Connecticut CAMA and Parcel Layer, the AYB and EYB fields
   may include null placeholder values of 0, 15, or other extremely low
@@ -2181,6 +2532,8 @@ property records.
   \item
     ``EYB'' is not equal to 0
   \item
+    ``EYB'' is less than or equal to 2025
+  \item
     ``AYB'' is greater than or equal to 1639 (the construction year of
     the Henry Whitfield House, the oldest standing building in
     Connecticut)
@@ -2192,32 +2545,30 @@ property records.
     zero date in systems like SQL, Power BI, and SharePoint)
   \end{itemize}
 \item
-  Interpreting results
+  \textbf{Interpreting results}
 
   Below is a sample series of boxplots automatically produced by running
   the Multivariate Clustering tool in ArcGIS Pro. These boxplots
-  illustrate the distribution of data for the three fields of interest
-  and reveal which clusters contain the combination of traits most
-  relevant to this analysis. The target cluster will exhibit the lowest
-  AYB, lowest EYB, and highest depreciation percentage.
+  illustrate the distribution of data for the three fields of interest,
+  as well as which clusters contain the combination of traits most
+  relevant to this analysis.
+
+  The red line, indicating cluster 2, reveals the target relationship.
+  Cluster 2 contains the lowest values of EYB and numerically
+  transformed Condition Description, as well as values of AYB below the
+  median. In this case, the parcels in cluster 2 would be isolated and
+  included in a Potentially Redevelopable Land inventory.
 
   \pandocbounded{\includegraphics[keepaspectratio]{images/mc_boxplot.png}}
 
-  For example, the yellow cluster (cluster 4) contains parcels with
-  extremely low AYB, high depreciation percentage, and low EYB, while
-  the red cluster (cluster 2) contains parcels with low AYB, the highest
-  depreciation, and the lowest EYB. Accordingly, clusters 2 and 4 are
-  groups of interest for potential rehabilitation; in this case, cluster
-  2 would be isolated and included in a Potentially Redevelopable Land
-  inventory, as it has the highest depreciation and lowest EYB.
-
   Note that AYB will naturally contain lower values than EYB, as it
-  reflects original construction rather than effective age. The oldest
-  buildings may have already undergone extensive renovation and
-  therefore may not exhibit similarly extreme depreciation or EYB
-  values. Accordingly, Depreciation and EYB should be weighted more
-  heavily when deciding which cluster to isolate, as these variables
-  better reflect the current physical condition of properties.
+  reflects original construction rather than effective age.
+  Additionally, the oldest buildings may have already undergone
+  extensive renovation and may not exhibit similarly low condition
+  ratings or EYB. Therefore, the numerically transformed Condition
+  Description and EYB fields should be weighted more heavily than AYB
+  when deciding which cluster to isolate, as these variables better
+  reflect the current redevelopment potential of properties.
 
   The figure on the left shows the results of the Multivariate
   Clustering tool in ArcGIS Pro, where cluster colors on the map
@@ -2263,14 +2614,18 @@ property records.
 
 \chapter{Creating the Maps}\label{creating-the-maps}
 
-The developable land inventory identifies land that meets the statutory
-definition of developable land under C.G.S. § 8-13aa. This inventory
-serves as a foundational input to subsequent phases of the Housing
-Growth Plan process, including the suitability analysis and the parcel
-and zone identification. These later steps will incorporate additional
-planning considerations, local context, and policy objectives to
-evaluate where housing growth and affordable housing opportunities may
-be most appropriate.
+Maps are only required as part of the Housing Growth Plans. They are not
+a required element of the Regional Needs Assessment. This section
+focuses on the maps in the Housing Growth Plans.
+
+The developable land inventory process is a preliminary planning-level
+screening product. It is primarily analytical in nature, involving the
+identification and documentation of qualifying areas through the
+application of knowledge, data, and methodology. \textbf{A map is not
+the mechanism by which developable areas are identified, nor does it
+constitute a determination of a property's development potential}.
+Rather, it serves as a visual representation of the underlying analysis,
+allowing the results to be verified and understood spatially.
 
 To support Housing Growth Plan reporting and review, the developable
 land inventory should be presented in the report as municipality-wide
@@ -2282,7 +2637,7 @@ The maps should incorporate the following data:
 \begin{itemize}
 \tightlist
 \item
-  Land identified as excluded from developable land
+  Identified land per the statutory definitions
   (\hyperref[sec-statutory-exclusions]{Section 3})
 \item
   Identified vacant parcels
@@ -2294,8 +2649,8 @@ The maps should incorporate the following data:
   4})
 \end{itemize}
 
-At a minimum, the following maps shall be included in the Housing Growth
-Plan:
+At a minimum, the following maps should be included in the Housing
+Growth Plan:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2303,29 +2658,30 @@ Plan:
   \textbf{Statutory Exclusions Map}: A municipality-wide map displaying
   each statutory exclusion category as a separate layer and symbolized
   distinctly to illustrate the distribution of land excluded from the
-  developable land inventory.
+  developable land inventory, per the statutes.
 \item
-  \textbf{Developable vs.~Non-Developable Land Map}: A municipality-wide
-  map depicting all statutory exclusion categories combined into a
-  single consolidated layer symbolized as non-developable land. All
-  remaining land not subject to statutory exclusions is displayed as
-  developable land, providing a simplified binary representation of land
-  suitability across the municipality.
+  \textbf{Developable Land Map}: A municipality-wide map depicting all
+  land that meets the statutory definitions of developable land, shown
+  as a single consolidated layer. Land excluded under the statutory
+  definitions, or otherwise deemed commercially infeasible to develop,
+  is shown as a separate consolidated layer. Together, these layers
+  provide a simplified representation of land suitability across the
+  municipality for purposes of this planning analysis.
 \item
   \textbf{Developable Land Summary Map}: A municipality-wide map
-  displaying all statutory exclusion categories combined into a single
-  exclusion layer, alongside a developable land layer representing all
-  land remaining after the exclusion analysis. Identified vacant parcels
-  and parcels with redevelopment potential should be displayed as
-  separate overlays.
+  displaying land deemed developable for this planning analysis,
+  alongside land excluded under the statutory definitions or otherwise
+  deemed infeasible to develop, each shown as a separate consolidated
+  layer. Identified vacant parcels and parcels with redevelopment
+  potential should be displayed as separate overlays.
 \end{enumerate}
 
 \section{Map Layers and Symbology}\label{map-layers-and-symbology}
 
-The following mapping standards are required for all final maps included
-in the report. Any deviations should be explained in a brief narrative
-detailing what was changed and why. Adherence to these standards ensures
-consistency across all 169 municipalities statewide.
+The following mapping standards should be applied for all final maps
+included in the report. Any deviations should be explained in a brief
+narrative detailing what was changed and why. Adherence to these
+standards ensures consistency across all 169 municipalities statewide.
 
 All maps include the municipal boundary layer to delineate the
 geographic extent of the study area.
@@ -2334,7 +2690,7 @@ geographic extent of the study area.
 \href{https://geodata.ct.gov/datasets/ctmaps::ct-municipalities-with-fips/about}{CT
 Municipalities (CT Geodata Portal)}
 
-Municipal parcel boundaries are included where appropriate to provide
+Municipal parcel boundaries may be included where appropriate to provide
 spatial context for interpretation of mapped datasets.
 
 \textbf{Dataset}:
@@ -2355,7 +2711,29 @@ All maps should include:
   Municipality name
 \item
   Legend identifying all mapped categories
+\item
+  \hyperref[note-on-intended-use]{Note on Intended Use}, clarifying that
+  the map is a planning-level screening product and not a legal or
+  parcel-specific determination of development potential
 \end{itemize}
+
+\subsection{Note on Intended Use}\label{note-on-intended-use}
+
+Each map should include a brief note clarifying the purpose and
+limitations of the developable land inventory. This helps ensure that
+the map is not misread as a legal or parcel-specific determination of
+development potential. Municipalities may adjust the language below as
+needed, provided the core message is retained.
+
+\emph{Suggested language:}
+
+\begin{quote}
+This map is a planning-level screening product prepared for
+{[}municipality name{]}'s developable land inventory, as required under
+C.G.S. Sec. 8-13aa -- 8-13dd. It is intended for municipal planning
+purposes only and does not constitute a legal or parcel-specific
+determination of development potential.
+\end{quote}
 
 \subsection{Symbology}\label{symbology}
 
@@ -2422,7 +2800,7 @@ remain accessible to users with color vision deficiencies.
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Parcels}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ parcel\ boundaries}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.1\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Parcels}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ parcel\ boundaries,\ used\ only\ for\ visual\ context}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.1\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
@@ -2487,7 +2865,7 @@ full-size map}}
 \setcounter{enumi}{1}
 \tightlist
 \item
-  \textbf{Developable vs.~Non-Developable Land Map}
+  \textbf{Developable Land Map}
 \end{enumerate}
 
 \global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
@@ -2538,13 +2916,13 @@ full-size map}}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Statutory\ exclusions}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ excluded\ from\ the\ developable\ land\ inventory\ in\ Section\ 2.\ All\ statutory\ exclusion\ categories\ should\ be\ combined\ into\ a\ single\ layer.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#4E4E4E)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Statutory\ exclusions}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ excluded\ from\ the\ developable\ land\ inventory\ (not\ commerically\ feasible\ and/or\ meet\ statutory\ exclusion\ categories\ from\ Section\ 3).\ Combined\ into\ a\ single\ layer.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#4E4E4E)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Developable\ land}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Land\ not\ identified\ as\ excluded\ under\ the\ statutory\ criteria.\ This\ layer\ represents\ all\ land\ remaining\ after\ the\ exclusion\ analysis.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Light\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#E1E1E1)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Developable\ land}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Land\ deemed\ developable\ per\ the\ statutory\ definitions.\ Combined\ into\ a\ single\ layer.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Light\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#E1E1E1)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
 
 \ascline{1.5pt}{666666}{1-5}
 
@@ -2624,37 +3002,37 @@ full-size map}}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipality\ boundary}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ boundary\ delineating\ the\ extent\ of\ the\ study\ area.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.6\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipality\ boundary}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ boundary\ delineating\ the\ extent\ of\ the\ study\ area}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.6\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Parcels}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ parcel\ boundaries.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.1\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Parcels}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Municipal\ parcel\ boundaries,\ used\ only\ for\ visual\ context}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 0.1\ pt,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 30\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Vacant\ Areas}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ identified\ as\ vacant\ in\ Section\ 4.1.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Orange}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#F17234)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 15\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Statutory\ exclusions}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ excluded\ from\ the\ developable\ land\ inventory\ (not\ commerically\ feasible\ and/or\ meet\ statutory\ exclusion\ categories\ from\ Section\ 3).\ Combined\ into\ a\ single\ layer}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 50\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ with\ Redevelopment\ Potential}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ identified\ as\ having\ redevelopment\ potential\ in\ Section\ 4.2.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Blue}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#71BFEF)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 35\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Vacant\ areas}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ identified\ as\ vacant\ in\ Section\ 4.1}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Orange}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#F17234)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 15\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Statutory\ Exclusions}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ excluded\ from\ the\ developable\ land\ inventory\ in\ Section\ 2.\ All\ statutory\ exclusion\ categories\ should\ be\ combined\ into\ a\ single\ layer.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Dark\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#343434)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 35\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ with\ redevelopment\ potential}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Areas\ identified\ as\ having\ redevelopment\ potential\ in\ Section\ 4.2}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Blue}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#71BFEF)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 35\%}}}} \\
 
 \ascline{0.75pt}{666666}{1-5}
 
 
 
-\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Developable\ Land}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Land\ not\ identified\ as\ excluded\ under\ the\ statutory\ criteria.\ This\ layer\ represents\ all\ land\ remaining\ after\ the\ exclusion\ analysis.}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Light\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#E1E1E1)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 50\%}}}} \\
+\multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Developable\ land}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1.4in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Land\ deemed\ developable\ per\ the\ statutory\ definitions.\ Combined\ into\ a\ single\ layer}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Solid,}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} Light\ gray}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} \linebreak }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} (\#E1E1E1)}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 1in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} None}}}} & \multicolumn{1}{>{\raggedright}p{\dimexpr 0.7in+0\tabcolsep}}{\advance\leftskip by 4.0pt\relax \advance\rightskip by 4.0pt\relax \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{{\fontspec{Arial} 35\%}}}} \\
 
 \ascline{1.5pt}{666666}{1-5}
 
@@ -2688,11 +3066,249 @@ full-size map}}
 
 \chapter{Next Steps}\label{next-steps-1}
 
-The Developable Land Inventory feeds into subsequent phases of the
-Housing Growth Plan, including a suitability analysis and the parcel and
-zone identification. Parcel-level detail, including deed restriction
-research and site-specific constraint verification, is addressed in
-those later phases.
+The developable land inventory is one step in the broader planning
+process for identifying reasonable areas to develop housing under these
+statutes. Other elements of this process will draw on the developable
+land inventory, applying separate analyses of locally defined factors
+that enable or limit development potential, to narrow planning focus and
+prioritize sites, neighborhoods, or zones for potential housing growth
+strategies.
+
+C.G.S. Sections 8-13bb(d) and (i), and 8-13cc(b) require OPM to issue
+guidelines on the ``form and level of detail'' required of Housing
+Growth Plans (HGPs) as well as the formats, mapping standards and
+standardized metrics for annual reporting on HGP implementation. The
+Secretary may amend these guidelines from time to time. These
+\hyperref[0]{Housing Growth Plan Guidelines} can be viewed on the
+\hyperref[0]{2025 Act Concerning Housing Growth web page} from OPM.
+
+Per the Housing Growth Plan Guidelines, other elements of the Housing
+Growth Plans may draw on this developable land inventory and apply
+further analyses, such as a
+\href{https://housingmaps.ct.gov/pages/suitability-analysis}{suitability
+analysis}, to inform elements such as:
+
+\begin{itemize}
+\tightlist
+\item
+  Diverse Housing Types
+\item
+  Accessibility for Individuals with Intellectual or Developmental
+  Disabilities
+\item
+  Parcel \& Zone Identification
+\item
+  Opportunities for New Affordable Units
+\end{itemize}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Appendices}
+\appendix
+
+\chapter{Frequently Asked Questions}\label{frequently-asked-questions}
+
+\textbf{Why is property that is already developed or owned as a
+single-family home included in the developable land inventory? (Why is
+my home in the developable land inventory?)}
+
+The developable land inventory is a high-level, preliminary screening
+product that looks at land across the entire municipality to assess
+whether it would, theoretically, be a good candidate for development.
+Many of these areas are already developed. Inclusion in the inventory
+does not mean anything will change for that property. It simply means
+that, in the context of these statutes, the area meets the criteria for
+housing based on commercially reasonable assumptions, easements,
+public-use limitations, topography, and other constraints.
+
+\textbf{Why aren't other factors, such as X, Y, and Z, considered in the
+developable land inventory?}
+
+The developable land inventory is designed to satisfy the statutory
+definition of a developable land inventory and to provide a high-level
+view of the entire municipality. Other elements of the Housing Growth
+Plan (such as the Parcel \& Zone Identification section) apply a more
+detailed suitability analysis that incorporates additional planning
+factors and considerations to determine whether specific areas are well
+suited or poorly suited for development. The developable land inventory
+is a starting point that feeds into that later, more detailed process.
+
+\textbf{Are COGs and municipalities required to follow this methodology
+exactly?}
+
+No.~This guidance and its methodology provide a standardized,
+transparent framework for identifying a ``developable land inventory,''
+which is a preliminary, screening-level product. Municipalities may
+adapt the approach as needed, provided the result still meets the
+outputs required in the Housing Growth Plans (see
+\hyperref[required-outputs-1]{Section 2}) and statutory intent.
+
+\textbf{A local dataset includes more detailed information than the
+statewide equivalent. Can local data be used instead?}
+
+Yes. The datasets listed here are simply what's available from the State
+and may be useful as a starting point. If more accurate or detailed
+local data exists, it should be used instead.
+
+\textbf{There is local knowledge on a topic not covered by the datasets
+listed here. Can it be used in determining the developable land
+inventory?}
+
+Yes. As long as that information is documented, can be verified or
+substantiated, and is included in the Housing Growth Plan narrative,
+local knowledge should be used in these determinations.
+
+\textbf{Can I use the maps of developable land in the Housing Growth
+Plan for another, unrelated project?}
+
+No.~The maps in the Housing Growth Plan are not standalone products and
+should not be used outside of the Housing Growth Plan. They provide
+visual context for the analysis process and carry no weight or authority
+outside of these statutory requirements.
+
+\chapter{Change Log}\label{change-log}
+
+\textbf{V0.2 (July 6, 2026)}
+
+Summary
+
+\begin{itemize}
+\tightlist
+\item
+  Added clarifying language about housing growth plan vs.~housing needs
+  assessment
+\item
+  Added diagram explaining how this fits into the rest of the planning
+  process
+\item
+  Expanded Next Steps section
+\item
+  Summary headers now link to each applicable section
+\end{itemize}
+
+Required Outputs
+
+\begin{itemize}
+\tightlist
+\item
+  Added language about statutes and requirements
+\item
+  Added regional housing needs program to outputs
+\end{itemize}
+
+Introduction
+
+\begin{itemize}
+\tightlist
+\item
+  Added clarifying language about housing growth plan vs.~housing needs
+  assessment, and statutory requirements of the GIS Office
+\item
+  Clarified language in overview and use of this guidance
+\item
+  Added language noting that towns/COGs can deviate from the methods as
+  long as they meet required outputs and follow the statutes
+\item
+  Clarified that inventory is a preliminary, planning-level screening
+  product
+\end{itemize}
+
+Statutory Exclusions (Definitions)
+
+\begin{itemize}
+\tightlist
+\item
+  Renamed section to ``Statutory Definitions''
+\item
+  Added clarifying language on this being a screening analysis,
+  including language on commercially reasonable assumptions; refined
+  language throughout for clarity on purpose, product, and expectations
+\item
+  Changed ``Recommended Datasets'' to ``Data Resources''
+\item
+  Adjusted language on ``local datasets'' to emphasize their use when
+  available, with statewide data filling gaps
+\item
+  Added CT greenways dataset
+\item
+  Added reference to aerial imagery
+\end{itemize}
+
+Vacant and Redevelopment
+
+\begin{itemize}
+\tightlist
+\item
+  Added clarifying language to the introductory section
+\item
+  Added brownfield geospatial layer as a dataset option
+\item
+  Updated methods for the construction/renovation year clustering
+  section
+\end{itemize}
+
+Mapping Standards
+
+\begin{itemize}
+\tightlist
+\item
+  Clarified that maps are included only in the HGPs and serve as a
+  visual of the analysis results
+\item
+  Renamed ``Developable vs.~Non-Developable Land Map'' to ``Developable
+  Land Map''
+\item
+  Updated language for Maps 2 and 3 so exclusions include the
+  commercially feasible part of the definition
+\item
+  Added new ``Note on Intended Use'' section
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Incorporated as part of the map elements
+  \item
+    Used as disclaimer language on each example map
+  \end{itemize}
+\item
+  Updated symbology items; adjusted layer order and related language
+\item
+  Updates example maps to follow the updated symbology
+\end{itemize}
+
+Next Steps
+
+\begin{itemize}
+\tightlist
+\item
+  Added language on HGP requirements per the Housing Growth Plan
+  Guidelines from OPM, and how the developable land inventory feeds into
+  other plan elements
+\end{itemize}
+
+FAQ
+
+\begin{itemize}
+\tightlist
+\item
+  Added FAQ page with initial questions and answers to appendix
+\end{itemize}
+
+Change Log
+
+\begin{itemize}
+\tightlist
+\item
+  Added change log to appendix
+\end{itemize}
+
+\textbf{V0.1 (June 25, 2026)}
+
+\begin{itemize}
+\tightlist
+\item
+  First official draft of the document
+\end{itemize}
 
 
 

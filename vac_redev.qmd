@@ -237,25 +237,25 @@ The Connecticut CAMA and Parcel Layer has multiple fields relevant to this analy
 
 - “AYB” (Actual Year Built) field: The original construction date for each parcel’s primary building
 - “EYB” (Effective Year Built) field: The building’s effective age, factoring in remodeling and renovations.
-- “Depreciation” field: Percent values indicating the amount of depreciation a building has experienced.
+- “Condition Description” field: Ordinal, categorical data indicating the physical condition of a building.
 
 It is important to note that there are no statewide criteria for evaluating Effective Year Built. The calculation of effective building age may vary depending on the individual judgement of assessors and is a form of subjective data. Accordingly, if the AYB and EYB fields lack sufficient data or if municipalities have their own criteria for evaluating EYB, they may elect to use their own assessor data and property records.
 
 1.  **Construction and renovation year clustering analysis**
 
-    This analysis uses a multivariate clustering tool in GIS to group parcels based on three fields simultaneously: original construction date (AYB), effective building age (EYB), and physical deterioration (Depreciation). Rather than applying a single threshold to one variable, multivariate clustering evaluates all three fields at once, automatically grouping parcels that share similar combinations of age, renovation history, and condition. The result is multiple groups of parcels, one of which will represent the oldest, least-renovated, and most deteriorated buildings in the study area, which are the parcels most likely to be candidates for rehabilitation or redevelopment.
+    This analysis uses a multivariate clustering tool to group parcels based on three fields simultaneously: original construction date (AYB), effective building age (EYB), and physical deterioration (Condition Description). Rather than applying a single threshold to one variable, multivariate clustering evaluates all three fields at once, automatically grouping parcels based on combinations of age, renovation history, and physical condition. The result is multiple groups of parcels, one of which will represent aged, infrequently renovated, and deteriorated buildings within the study area, which are the parcels most likely to be candidates for rehabilitation or redevelopment.
 
     **Why multivariate clustering?**
 
-    A simple threshold approach (for example, filtering only by construction year) would miss properties that are old but have been well-maintained, or flag properties that are deteriorated but have been recently renovated. A multivariate analysis using the "AYB", "EYB", and "Depreciation" fields together can be used to flag groups of parcels with high redevelopment potential.
+    A simple threshold approach (for example, filtering only by construction year) would miss properties that are old but have been well-maintained, or flag properties that are deteriorated but have been recently renovated. A multivariate analysis using the “AYB”, “EYB”, and “Condition Description” fields together can be used to flag groups of parcels with high redevelopment potential.
 
-    It is also important to use a clustering method that does not rely on spatial relationships between parcels, meaning one that groups parcels based purely on shared traits rather than proximity or adjacency. Spatial clustering methods, such as K-nearest neighbor (KNN) or Queen contiguity, which would traditionally be used for parcel data using polygon geometry, identify parcels based on how close they are to each other or whether they share edges or corners. Because the parcel layer may be segmented by missing data, these methods will fail or produce inaccurate clusters by attempting to connect parcels across large gaps. Instead, a non-spatial multivariate clustering method ensures that all parcels with available data are assigned to a cluster with shared features, regardless of where they are located. For more insight into these methods and their limitations:
+    It is important to avoid clustering methods that rely on spatial relationships between parcels, including proximity or adjacency. Spatial clustering methods, such as K-nearest neighbor (KNN) algorithms or techniques informed by Queen contiguity, would traditionally be used for parcel data using polygon geometry. These identify parcels based on how close they are to each other or whether they share edges or corners. Because the parcel layer may be segmented by missing data, these methods will fail or produce inaccurate clusters by attempting to connect parcels across large gaps. In contrast, a non-spatial multivariate clustering method ensures that all parcels with available data are assigned to a cluster with shared features, regardless of where they are located. For more insight into spatial methods and their limitations:
 
     - Brief introduction to concepts, with R examples: [Spatial Weights Matrix](https://cran.r-project.org/web/packages/geostan/vignettes/spatial-weights-matrix.html)
     - Description of spatial statistics: [Modeling Spatial Relationships](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/spatial-statistics/modeling-spatial-relationships.html)
     - Overview of ESRI clustering tools and their applications: [Mapping Clusters](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/spatial-statistics/an-overview-of-the-mapping-clusters-toolset.html)
 
-    Instead, it is recommended to use a multivariate clustering tool that relies only on the presence of shared traits. These tools identify optimized seed locations, or initial parcels, by maximizing their initial distance from each other, then repeatedly adjusting these seeds to minimize variability within clusters and increase variability between clusters. In this way, all parcels with available data are assigned to a cluster with shared features. Simplified, the process is:
+    Therefore, it is recommended to use a solely trait-based multivariate clustering tool. These tools identify optimized seed locations, around which clusters will be built, by maximizing their initial distance from each other. The tool then repeatedly adjusts these seeds to minimize trait variability within clusters and maximize trait variability between clusters. In this way, all parcels with available data are assigned to a cluster with shared features. Simplified, the process is:
 
     ::: {style="text-align:center;"}
     *assign seeds → recompute and adjust seed location → repeat until stable*
@@ -269,33 +269,69 @@ It is important to note that there are no statewide criteria for evaluating Effe
     Recommended settings:
 
     - K-means algorithm
-    - 4 seeds (producing 4 clusters)
     - Optimized seeds
 
     For the ArcGIS Pro tool, there is an option to choose between the K-means or K-medoids algorithm. K-medoids is robust to outliers, while K-means is faster and operates more efficiently with large datasets; accordingly, K-means is the recommended algorithm for this analysis and is also the default option for the QGIS Attribute Based Clustering Plugin.
 
+    Within these tools, municipalities must also choose the number of clusters to evaluate. Considerations when choosing number of clusters (K) include:
+
+    - Additional statistical measures (pseudo-F statistic)
+    - Interpretability
+    - Validation against imagery layers
+    - Local knowledge
+
+    The chart below is a built-in product of the Multivariate Clustering Tool in ArcGIS Pro. The local peaks indicate a higher pseudo-F statistic, corresponding to greater distinctiveness between clusters and more meaningful data separation.
+
+    ::: {style="text-align:center;"}
+    ![](images/kmeans.png){fig-alt="multivariate clustering box plot example"}
+    :::
+
+    Based solely on the chart, the most appropriate number of clusters would be 4 or 8. In general, a larger number of clusters means that a smaller, more selective subset of parcels will be identified. While 8 clusters may offer a more refined analysis and statistically stronger results, 4 clusters offer simplicity and ease of interpretation.
+
+    For construction and renovation year clustering analyses, it is generally recommended to evaluate results from 3 to 6 clusters. This range should be sufficient to capture meaningful variations in housing characteristics while maintaining interpretability. Therefore, the selection of appropriate number of clusters (K) does not have to rely solely on statistical measures but also on the practicality of the resulting groups. In addition to these considerations, it is important to check whether the redevelopment candidates make sense when mapped and validated against other data such as imagery.
+
+    The multivariate analysis may need to be run multiple times to settle on the most suitable number of clusters. When evaluating analysis outputs, it is important to verify whether each cluster represents a distinct and understandable housing profile based on the three fields of interest.  
+
 2.  **Data preparation**
+
+    Prior to running a multivariate clustering analysis, municipalities should translate the categorical Condition Description field into a new field of quantitative data, with buildings in poorer condition receiving lower numerical scores. Municipalities may need to evaluate Condition Description data in the context of their individual assessing standards to accurately translate them to numbers, as there are no statewide standards for this field. Additionally, the data may need to be cleaned by removing inconsistent capitalization, spelling, or spacing prior to creating a new field.
+
+    Example numerical classification dictionary:
+
+    - "Very Poor": 1
+    - "Poor": 2 "
+    - Average-": 3
+    - "Average": 4
+    - "Average+": 5
+    - "Good": 6
+    - "Very Good": 7
+    - "Excellent": 8
+
+    If the multivariate clustering tool in a municipality’s software of choice does not automatically standardize data, it is necessary to standardize the EYB, AYB, and numerically transformed Condition Description fields due to scale differences.
+
+    Within the Connecticut CAMA and Parcel Layer, the AYB and EYB fields may include null placeholder values in the form of extremely low or high numbers. Accordingly, municipalities should evaluate the distribution of these values in their CAMA data, identify any outliers or apparent null placeholders, verify these against their oldest historical buildings, and filter this data out prior to running the clustering analysis.
 
     Within the Connecticut CAMA and Parcel Layer, the AYB and EYB fields may include null placeholder values of 0, 15, or other extremely low numbers. Placeholders may also take the form of years from the 1500s, 1600s, or 1700s. Accordingly, municipalities should evaluate the distribution of AYB values in their CAMA data, identify any outliers or apparent null placeholders, verify these against their oldest historical buildings, and filter this data out prior to running the clustering analysis.
 
     Example filter queries include:
 
     - "EYB" is not equal to 0
+    - “EYB” is less than or equal to 2025
     - "AYB" is greater than or equal to 1639 (the construction year of the Henry Whitfield House, the oldest standing building in Connecticut)
     - "AYB" \>= 1788 (the year of Connecticut's founding as a state)
     - "AYB" \>= 1899 (a common placeholder year, as it is the zero date in systems like SQL, Power BI, and SharePoint)
 
-3.  Interpreting results
+3.  **Interpreting results**
 
-    Below is a sample series of boxplots automatically produced by running the Multivariate Clustering tool in ArcGIS Pro. These boxplots illustrate the distribution of data for the three fields of interest and reveal which clusters contain the combination of traits most relevant to this analysis. The target cluster will exhibit the lowest AYB, lowest EYB, and highest depreciation percentage.
+    Below is a sample series of boxplots automatically produced by running the Multivariate Clustering tool in ArcGIS Pro. These boxplots illustrate the distribution of data for the three fields of interest, as well as which clusters contain the combination of traits most relevant to this analysis.
+
+    The red line, indicating cluster 2, reveals the target relationship. Cluster 2 contains the lowest values of EYB and numerically transformed Condition Description, as well as values of AYB below the median. In this case, the parcels in cluster 2 would be isolated and included in a Potentially Redevelopable Land inventory.
 
     ::: {style="text-align:center;"}
     ![](images/mc_boxplot.png){fig-alt="multivariate clustering box plot example"}
     :::
 
-    For example, the yellow cluster (cluster 4) contains parcels with extremely low AYB, high depreciation percentage, and low EYB, while the red cluster (cluster 2) contains parcels with low AYB, the highest depreciation, and the lowest EYB. Accordingly, clusters 2 and 4 are groups of interest for potential rehabilitation; in this case, cluster 2 would be isolated and included in a Potentially Redevelopable Land inventory, as it has the highest depreciation and lowest EYB.
-
-    Note that AYB will naturally contain lower values than EYB, as it reflects original construction rather than effective age. The oldest buildings may have already undergone extensive renovation and therefore may not exhibit similarly extreme depreciation or EYB values. Accordingly, Depreciation and EYB should be weighted more heavily when deciding which cluster to isolate, as these variables better reflect the current physical condition of properties.
+    Note that AYB will naturally contain lower values than EYB, as it reflects original construction rather than effective age. Additionally, the oldest buildings may have already undergone extensive renovation and may not exhibit similarly low condition ratings or EYB. Therefore, the numerically transformed Condition Description and EYB fields should be weighted more heavily than AYB when deciding which cluster to isolate, as these variables better reflect the current redevelopment potential of properties.
 
     The figure on the left shows the results of the Multivariate Clustering tool in ArcGIS Pro, where cluster colors on the map correspond to those shown in the boxplots. The figure on the right shows the resulting map after isolating cluster 2, which represents the end product of a construction and renovation year clustering analysis.
 

@@ -1,0 +1,35 @@
+# Frequently Asked Questions
+
+**Why is property that is already developed or owned as a single-family home included in the developable land inventory? (Why is my home in the developable land inventory?)**
+
+The developable land inventory is a high-level, preliminary screening product that looks at land across the entire municipality to assess whether it would, theoretically, be a good candidate for development. Many of these areas are already developed. Inclusion in the inventory does not mean anything will change for that property. It simply means that, in the context of these statutes, the area meets the criteria for housing based on commercially reasonable assumptions, easements, public-use limitations, topography, and other constraints.
+
+<br>
+
+**Why aren't other factors, such as X, Y, and Z, considered in the developable land inventory?**
+
+The developable land inventory is designed to satisfy the statutory definition of a developable land inventory and to provide a high-level view of the entire municipality. Other elements of the Housing Growth Plan (such as the Parcel & Zone Identification section) apply a more detailed suitability analysis that incorporates additional planning factors and considerations to determine whether specific areas are well suited or poorly suited for development. The developable land inventory is a starting point that feeds into that later, more detailed process.
+
+<br>
+
+**Are COGs and municipalities required to follow this methodology exactly?**
+
+No. This guidance and its methodology provide a standardized, transparent framework for identifying a "developable land inventory," which is a preliminary, screening-level product. Municipalities may adapt the approach as needed, provided the result still meets the outputs required in the Housing Growth Plans (see [Section 2](outputs.qmd)) and statutory intent.
+
+<br>
+
+**A local dataset includes more detailed information than the statewide equivalent. Can local data be used instead?**
+
+Yes. The datasets listed here are simply what's available from the State and may be useful as a starting point. If more accurate or detailed local data exists, it should be used instead.
+
+<br>
+
+**There is local knowledge on a topic not covered by the datasets listed here. Can it be used in determining the developable land inventory?**
+
+Yes. As long as that information is documented, can be verified or substantiated, and is included in the Housing Growth Plan narrative, local knowledge should be used in these determinations.
+
+<br>
+
+**Can I use the maps of developable land in the Housing Growth Plan for another, unrelated project?**
+
+No. The maps in the Housing Growth Plan are not standalone products and should not be used outside of the Housing Growth Plan. They provide visual context for the analysis process and carry no weight or authority outside of these statutory requirements.

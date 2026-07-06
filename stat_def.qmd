@@ -244,7 +244,7 @@ There is no single comprehensive dataset of open space, parks, and recreation ar
 5.  [CT DEEP Protected Open Space (2011)](#sec-ct-deep-protected-open-space-2011)
 6.  [CT DEEP Federal Open Space](#sec-ct-deep-federal-open-space)
 7.  [CT DEEP 1997 Municipal and Private Open Space Property](#sec-ct-deep-1997-municipal-and-private-open-space-property)
-8.  [CT Department of Agriculture Conservation Easements](#sec-ct-department-of-agriculture-conservation-easements)
+8.  [Connecticut Greenways](#sec-greenways)
 9.  [USGS PAD-US](#sec-usgs-protected-areas-database-of-the-united-states)
 
 <br/>
@@ -303,7 +303,7 @@ OR OWNER '%LAND ALLIANCE%'
 
 <br/>
 
-##### B. ***State Use and State Use Description Queries***
+##### B. State Use and State Use Description Queries
 
 Search state use and state use description for open space and recreation terms, including:
 
@@ -318,7 +318,7 @@ STATE_USE_DESCRIPTION LIKE '%OPEN%'
     
 OR STATE_USE_DESCRIPTION LIKE '%FOREST%'
     
-OR STATE_USE_DESCRIPTION LIKE %REC%'
+OR STATE_USE_DESCRIPTION LIKE ''%REC%'
 ```
 
 <br>
@@ -377,7 +377,7 @@ This layer has not been updated since 1997 and may not be accurate. For more acc
 
 <br/>
 
-#### Connecticut Greenways
+#### Connecticut Greenways {#sec-greenways}
 
 **Dataset**: [Official Designated Connecticut Greenways (CT Housing Data Hub)](https://housingmaps.ct.gov/datasets/CTDEEP::official-designated-connecticut-greenways/about)
 
@@ -424,7 +424,7 @@ To the extent that municipality-wide restriction data is digitally available, it
 
 <br/>
 
-## Wetlands or watercourses, as defined in the Wetlands and Watercourses Act (CGS Chapter 440)
+## Wetlands or watercourses, as defined in the Wetlands and Watercourses Act (C.G.S. Chapter 440)
 
 Wetlands and watercourses are defined under the [CT Wetlands and Watercourses Act (C.G.S. Chapter 440)](https://www.cga.ct.gov/2019/pub/chap_440.htm) and include inland wetlands, watercourses, and related regulated areas subject to environmental protection and development limitations.
 

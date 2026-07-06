@@ -1,5 +1,67 @@
 # Change Log
 
-V0.1 (June 2026)
+**V0.2 (July 6, 2026)**
 
-- First official draft of the document.
+Summary
+
+- Added clarifying language about housing growth plan vs. housing needs assessment
+- Added diagram explaining how this fits into the rest of the planning process
+- Expanded Next Steps section
+- Summary headers now link to each applicable section
+
+Required Outputs
+
+- Added language about statutes and requirements
+- Added regional housing needs program to outputs
+
+Introduction
+
+- Added clarifying language about housing growth plan vs. housing needs assessment, and statutory requirements of the GIS Office
+- Clarified language in overview and use of this guidance
+- Added language noting that towns/COGs can deviate from the methods as long as they meet required outputs and follow the statutes
+- Clarified that inventory is a preliminary, planning-level screening product
+
+Statutory Exclusions (Definitions)
+
+- Renamed section to "Statutory Definitions"
+- Added clarifying language on this being a screening analysis, including language on commercially reasonable assumptions; refined language throughout for clarity on purpose, product, and expectations
+- Added clarification about use of land trusts
+- Changed "Recommended Datasets" to "Data Resources"
+- Adjusted language on "local datasets" to emphasize their use when available, with statewide data filling gaps
+- Added CT greenways dataset
+- Added reference to aerial imagery
+
+Vacant and Redevelopment
+
+- Added clarifying language to the introductory section
+- Added brownfield geospatial layer as a dataset option
+- Updated methods for the construction/renovation year clustering section
+
+Mapping Standards
+
+- Clarified that maps are included only in the HGPs and serve as a visual of the analysis results
+- Renamed "Developable vs. Non-Developable Land Map" to "Developable Land Map"
+- Updated language for Maps 2 and 3 so exclusions include the commercially feasible part of the definition
+- Added new "Note on Intended Use" section
+  - Incorporated as part of the map elements
+  - Used as disclaimer language on each example map
+- Updated symbology items; adjusted layer order and related language
+- Updates example maps to follow the updated symbology
+
+Next Steps
+
+- Added language on HGP requirements per the Housing Growth Plan Guidelines from OPM, and how the developable land inventory feeds into other plan elements
+
+FAQ
+
+- Added FAQ page with initial questions and answers to appendix
+
+Change Log
+
+- Added change log to appendix
+
+<br>
+
+**V0.1 (June 25, 2026)**
+
+- First official draft of the document
