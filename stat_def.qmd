@@ -192,7 +192,7 @@ There is no publicly available statewide GIS dataset representing public school 
 
 **Dataset:** [Education Directory (CT Open Data Portal)](https://data.ct.gov/Education/Education-Directory/9k2y-kqxn/about_data)
 
-Because the dataset is provided in address form and does not contain spatial geometry, the records must first be spatialized through a geocoding process to generate point features representing individual school locations. Once geocoded, the resulting point dataset can be used to identify associated parcel polygons through a spatial selection or spatial join operation, whereby parcels containing or intersecting point locations are selected.
+The Education Directory provides location data as addresses. The Open Data Portal includes a column that contains latitude and longitude, since it was geocoded by an internal tool; this field can be used, but results should be verified thoroughly. If not using that field, users should geocode the records themselves to generate point features representing individual school locations. Once geocoded, the resulting points can be used to identify associated parcel polygons via a spatial selection or spatial join, selecting parcels that contain or intersect each point location.
 
 Following the spatial selection process, identified parcels should be reviewed and verified using available parcel ownership and land use attributes. In many cases, qualifying school parcels can be confirmed based on ownership records indicating municipal, district, or other public ownership, and/or parcel use classifications identifying the property as a school, educational facility, or similar institutional use. Additional manual review may be necessary in situations where multiple parcels are associated with a single school campus or where ownership and land use information are ambiguous.
 
@@ -205,6 +205,8 @@ After geocoding addresses to points, use this process to identify and extract po
 
 1.  Ensure matching coordinate systems
 2.  Perform a spatial selection (often referred to as Select by Location)
+    - ArcGIS Pro: [Select by Location](https://doc.esri.com/en/arcgis-pro/latest/help/mapping/navigation/select-features-by-location.html), [Spatial Join](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/spatial-join.html?tabs=dialog), [Summarize Within](https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/summarize-within.html?tabs=dialog)
+    - QGIS: [Extract by Location](https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#extract-by-location) or [Select by Location](https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#select-by-location) within Vector Selection, [Join Attributes by Location](https://www.qgistutorials.com/en/docs/3/performing_spatial_joins.html)
 3.  Export or save the selected polygons
 
 <br/>
