@@ -35,7 +35,7 @@ For each statutory exclusion category, the workflow will generally proceed as fo
 Finally, the land areas for each category would be compiled and symbolized in accordance with the mapping standards described in [Section 5](map.qmd). The final maps layouts include the land area identified in this section. Inventories are recommended to include vacant land from [Section 4.1](vac_redev.qmd) and land for potential redevelopment from [Section 4.2](vac_redev.qmd), since these components will be used in subsequent phases of the analyses.
 
 ::: {.callout-note appearance="simple" icon="false"}
-If using aerial imagery for review, high‑resolution statewide imagery (leaf‑off, 4‑band, 3‑inch pixel) is available through CT ECO for [download](https://maps.cteco.uconn.edu/download/) or through [online services](https://maps.cteco.uconn.edu/map-services/). More information can be found on the [2023 Aerial Imagery and Elevation](https://maps.cteco.uconn.edu/data/flight2023/) web page.
+If using aerial imagery for review, high‑resolution statewide imagery (leaf-off, 4-band, 3-inch pixel) is available through CT ECO for [download](https://maps.cteco.uconn.edu/download/) or through [online services](https://maps.cteco.uconn.edu/map-services/). More information can be found on the [2023 Aerial Imagery and Elevation](https://maps.cteco.uconn.edu/data/flight2023/) web page.
 :::
 
 <br/>
