@@ -1,6 +1,10 @@
 # Change Log
 
-**V0.2 (July 8, 2026)**
+**V1.0 (July 8, 2026)**
+
+- Public release
+
+**V0.2 (July 7, 2026)**
 
 Summary
 
