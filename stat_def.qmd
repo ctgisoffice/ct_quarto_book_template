@@ -6,9 +6,9 @@
 
 This developable land inventory is intended as a high-level GIS screening tool to support the preparation of Housing Growth Plans. The inventory applies the definition in C.G.S. Sec. 8-13aa and provides a framework for identifying land that should be evaluated further through local planning and feasibility analysis. The inventory and associated GIS screening methodology are not intended to serve as a final determination of whether individual areas or parcels are developable or redevelopable.
 
-**Commercially reasonable assumptions**: The statute requires that feasibility determinations for developable land be grounded in commercially reasonable assumptions. This standard is inherently context dependent. What counts as a commercially reasonable assumption in one municipality or region may not hold true in another, given differences in market conditions, infrastructure capacity, land values, and local development patterns. Because of this variability, this guidance does not attempt to define a single statewide threshold for what makes an assumption commercially reasonable. Municipalities and COGs should apply local market knowledge and professional judgment when assessing feasibility, consistent with the statutory standard.
+**Commercially reasonable assumptions**: The statute requires that feasibility determinations for developable land be grounded in commercially reasonable assumptions. This standard is inherently context dependent. What counts as a commercially reasonable assumption in one municipality or region may not hold true in another, given differences in market conditions, infrastructure capacity, land values, and local development patterns. Because of this variability, this guidance does not attempt to define a single statewide threshold for what makes an assumption commercially reasonable. The methods outlined to identify vacant and land for potential redevelopment in [Section 4](vac_redev.qmd) could provide a starting point for this analysis. Municipalities and COGs should apply local market knowledge and professional judgment when assessing feasibility, consistent with the statutory standard.
 
-The GIS methodology described in this guidance focuses on identifying land that is statutorily excluded from further developability analysis. Land that is not excluded should not automatically be interpreted as developable. Rather, it represents land that may warrant additional evaluation during preparation of the Housing Growth Plan and Regional Needs Assessment using locally informed, commercially reasonable assumptions.
+The GIS methodology described in this guidance focuses on identifying land that is statutorily excluded from further developability analysis. Land that is not excluded should not automatically be interpreted as developable. Rather, it represents land that may warrant additional evaluation during preparation of the Regional Needs Assessment and Housing Growth Plans using locally informed, commercially reasonable assumptions.
 
 Under the statute, several types of land are defined as areas that should be excluded from these developable land inventories:
 
@@ -32,7 +32,7 @@ For each statutory exclusion category, the workflow will generally proceed as fo
 2.  Filter datasets to the regional study area (i.e. municipality or planning region) and, where necessary, apply attribute queries or other selection criteria to isolate relevant features.
 3.  Review and verify selected areas for accuracy using available reference materials, including aerial imagery, local knowledge, municipal mapping resources, and other supporting datasets.
 
-Finally, the land areas for each category will be compiled and symbolized in accordance with the mapping standards described in [Section 5](map.qmd). The final maps layouts will include the land area identified in this section. Inventories are recommended to include vacant land from [Section 4.1](vac_redev.qmd) and land for potential redevelopment from [Section 4.2](vac_redev.qmd), since these components will be used in subsequent phases of the analyses.
+Finally, the land areas for each category would be compiled and symbolized in accordance with the mapping standards described in [Section 5](map.qmd). The final maps layouts include the land area identified in this section. Inventories are recommended to include vacant land from [Section 4.1](vac_redev.qmd) and land for potential redevelopment from [Section 4.2](vac_redev.qmd), since these components will be used in subsequent phases of the analyses.
 
 ::: {.callout-note appearance="simple" icon="false"}
 If using aerial imagery for review, high‑resolution statewide imagery (leaf‑off, 4‑band, 3‑inch pixel) is available through CT ECO for [download](https://maps.cteco.uconn.edu/download/) or through [online services](https://maps.cteco.uconn.edu/map-services/). More information can be found on the [2023 Aerial Imagery and Elevation](https://maps.cteco.uconn.edu/data/flight2023/) web page.
@@ -452,6 +452,12 @@ Connecticut wetlands and watercourses are defined as follows:
 
 ### Technical Guidance
 
+#### Local data {#sec-local-data3}
+
+Datasets may be available from your municipality’s inland wetlands agency. If available, local mapping can provide greater detail and more current information than statewide datasets.
+
+<br/>
+
 #### Soils Inland Wetland {#sec-soils-inland-wetland}
 
 This dataset from CT DEEP is derived from Connecticut Soil Survey Geographic Database (SSURGO) data and identifies wetland and non‑wetland soils as defined by the Connecticut Inland Wetlands and Watercourses Act.
@@ -489,12 +495,6 @@ As part of the Connecticut Hydrography Set, the Hydrography Poly layer includes 
 ::: {.callout-note appearance="simple" icon="false"}
 Although the NHD provides information locations of marshes, the "marsh" category should not be used here. Connecticut inland wetlands are defined by soil type by statutes (C.G.S. Chapter 440) and this data should take priority over the NHD marshes category. See the **Soils Inland Wetland** section above for more details on inland wetlands data.
 :::
-
-<br/>
-
-#### Local data {#sec-local-data3}
-
-Datasets may be available from your municipality’s inland wetlands agency. If available, local mapping can provide greater detail and more current information than statewide datasets.
 
 <br/>
 

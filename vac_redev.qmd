@@ -1,8 +1,8 @@
 # Identifying Vacant and Potential Land for Redevelopment
 
-Beyond the statutory requirements, identifying vacant and potentially redevelopable areas provides important context for this planning phase and supports analyses of the development potential of identified areas. The inventory produced during this phase serves as a foundation for further study, not a final determination of development potential.
+Beyond the statutory requirements, identifying vacant and potentially redevelopable areas provides important context for this planning phase and supports analysis of the development potential of identified areas. These methodologies may serve as a starting point for identifying "commercially feasible" areas, as referenced in the statute. The inventory produced during this phase serves as a foundation for further study, not a final determination of development potential.
 
-This section describes suggested queries for identifying parcels within these categories, along with a set of analytical approaches that can be used to evaluate redevelopment potential. As with the rest of this guidance, these methods are offered as a flexible toolkit rather than a required methodology, allowing municipalities and COGs to recognize parcels that might support future housing development while tailoring the analysis to local priorities and conditions.
+This section describes potential queries for identifying parcels within these categories, along with a set of analytical approaches that can be used to evaluate redevelopment potential. As with the rest of this guidance, these methods are offered as a flexible toolkit rather than a required methodology, allowing municipalities and COGs to recognize parcels that might support future housing development while tailoring the analysis to local priorities and conditions.
 
 **Regardless of the approach used, it is recommended that outputs be carefully reviewed using local knowledge, supplemental data sources, and/or aerial imagery.**
 
@@ -57,9 +57,7 @@ Full SQL queries used to generate this dataset are available in our [GitHub repo
 
 ## Potentially Redevelopable Land
 
-Potentially redevelopable land consists of previously developed parcels with characteristics suggesting they may be underutilized or suitable for redevelopment. Consider the following approaches:
-
-<br/>
+Potentially redevelopable land consists of previously developed parcels with characteristics suggesting they may be underutilized or suitable for redevelopment. The following approaches use data to systematically identify redevelopment opportunities; however, local knowledge and information are essential to confirm and verify results. These methods are not intended to be comprehensive, and other approaches may also be appropriate depending on local circumstances. Some approaches you might consider include the following:
 
 ### **Brownfields**
 

@@ -1,6 +1,6 @@
 # Change Log
 
-**V0.2 (July 6, 2026)**
+**V0.2 (July 7, 2026)**
 
 Summary
 
@@ -9,8 +9,9 @@ Summary
 - Expanded Next Steps section
 - Summary headers now link to each applicable section
 
-Required Outputs
+Required Outputs (Use of This Analysis)
 
+- Renamed section to “Use of This Analysis”
 - Added language about statutes and requirements
 - Added regional housing needs program to outputs
 
@@ -36,6 +37,7 @@ Vacant and Redevelopment
 - Added clarifying language to the introductory section
 - Added brownfield geospatial layer as a dataset option
 - Updated methods for the construction/renovation year clustering section
+- Clarified that this is a data exercise, these approaches are not exhaustive
 
 Mapping Standards
 

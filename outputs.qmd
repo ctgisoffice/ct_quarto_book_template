@@ -1,21 +1,39 @@
-# Required Outputs
+# Use of This Analysis
 
-Per these guidelines, the following represent the outputs expected for the Housing Growth Plan report and Regional Housing Needs allocation. The approach used to generate these outputs is at the discretion of the COG or municipality; sections [3](stat_def.qmd) and [4](vac_redev.qmd) suggest a framework along with supporting data and resources for doing so.
+The developable land inventory produced under these guidelines serves three primary uses:
+
+1.  **As one of several statutorily defined factors in the Regional Housing Needs Assessment** that COGs are required to conduct under C.G.S. Sec. 8-13dd.
+
+2.  **As the starting point for subsequent suitability analyses** related to the development of a Housing Growth Plan.
+
+3.  **As a required plan element of a Housing Growth Plan** under C.G.S. Sec. 8-13bb.
+
+The approach used to generate the analysis is at the discretion of the COG or municipality; sections [3]{.underline} and [4]{.underline} suggest a framework along with supporting data and resources for doing so.
 
 <br>
 
-## Housing growth plans
+## Regional Housing Needs Assessment
 
-C.G.S. Sections 8-13bb(d) and (i), and 8-13cc(b) require OPM to issue guidelines on the “form and level of detail” required of Housing Growth Plans (HGPs) as well as the formats, mapping standards and standardized metrics for annual reporting on HGP implementation. The Secretary may amend these guidelines from time to time. These [Housing Growth Plan Guidelines](https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Housing-Growth-Plans-Page) can be viewed on the [2025 Act Concerning Housing Growth web page](https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Homepage) from OPM.
+C.G.S. Sec. 8-13dd: The results of this process of identifying qualifying developable land per C.G.S. Section 8-13aa are one of several factors used in calculating the Regional Housing Needs allocation under C.G.S. Section 8-13dd(c)(3).
+
+<br>
+
+## Suitability Analyses
+
+The developable land inventory also serves as the starting point for suitability analyses conducted as part of Housing Growth Plan development. The development of a Housing Growth Plan will include the consideration of various enabling and limiting planning factors in order to narrow geographic focus for different housing growth strategies, including evaluating parcels and/or zones for accommodating the municipal affordable housing goal and identifying areas to prioritize for diversifying housing stock and/or encouraging supportive housing.
+
+The suitability analysis builds on the inventory by adding locally selected planning factors that could potentially enable or limit development. The developable land inventory, which identifies the total area of land considered developable pursuant to C.G.S. Sec. 8-13aa, may provide the foundation for a suitability analysis. However, communities may wish to reconsider the development potential of certain lands that were excluded from the inventory by the law, such as private or public lands committed to public use.
+
+For more detail, see this [documentation](https://housingmaps.ct.gov/pages/suitability-analysis) on preparing a suitability analysis.
+
+<br>
+
+## Housing Growth Plans
+
+C.G.S. Sections 8-13bb(d) and (i), and 8-13cc(b) require OPM to issue guidelines on the “form and level of detail” required of Housing Growth Plans (HGPs) as well as the formats, mapping standards and standardized metrics for annual reporting on HGP implementation. The Secretary may amend these guidelines from time to time. These [Housing Growth Plan Guidelines](https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Housing-Growth-Plans-Page) can be viewed on the [Housing Growth Planning web page](https://experience.arcgis.com/experience/057c27cda2d848edbcb1ffac4a1b8898/page/Homepage) from OPM.
 
 Per the Housing Growth Plan Guidelines, the following outputs are should be included in the Housing Growth Plan report as part of the developable land inventory:
 
 1.  Three town-wide maps produced in accordance with the mapping standards outlined in [Section 5: Creating the Maps](map.qmd), illustrating (1) statutory exclusions, (2) developable land, (3) a developable land summary, including vacant parcels and areas with redevelopment potential.
 
 2.  Narrative description of the methodology used to develop the inventory of developable land. This should include how vacant and potential redevelopment areas were identified, a summary of data sources used, how datasets were queried and processed, and the methods used to classify land.
-
-<br>
-
-## Regional housing needs program
-
-[C.G.S. Sec. 8-13dd]{.underline}: The results of this process of identifying qualifying developable land per C.G.S. Section 8-13aa are used in calculating the Regional Housing Needs allocation under C.G.S. Section 8-13dd(c)(3).

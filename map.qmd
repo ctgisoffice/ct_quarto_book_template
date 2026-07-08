@@ -1,6 +1,6 @@
 # Creating the Maps
 
-Maps are only required as part of the Housing Growth Plans. They are not a required element of the Regional Needs Assessment. This section focuses on the maps in the Housing Growth Plans.
+The developable land inventory analysis is a required plan element of the Housing Growth Plan. It is not a required element of the Regional Needs Assessment. The Guidelines recommend that this analysis be presented through a combination of maps and narrative, and this section focuses on the maps used to present that analysis in the Housing Growth Plans.
 
 The developable land inventory process is a preliminary planning-level screening product. It is primarily analytical in nature, involving the identification and documentation of qualifying areas through the application of knowledge, data, and methodology. **A map is not the mechanism by which developable areas are identified, nor does it constitute a determination of a property's development potential**. Rather, it serves as a visual representation of the underlying analysis, allowing the results to be verified and understood spatially.
 
