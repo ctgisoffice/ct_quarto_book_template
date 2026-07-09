@@ -1107,13 +1107,15 @@ information.
 \href{https://data.ct.gov/Education/Education-Directory/9k2y-kqxn/about_data}{Education
 Directory (CT Open Data Portal)}
 
-Because the dataset is provided in address form and does not contain
-spatial geometry, the records must first be spatialized through a
-geocoding process to generate point features representing individual
-school locations. Once geocoded, the resulting point dataset can be used
-to identify associated parcel polygons through a spatial selection or
-spatial join operation, whereby parcels containing or intersecting point
-locations are selected.
+The Education Directory provides location data as addresses. The Open
+Data Portal includes a column that contains latitude and longitude,
+since it was geocoded by an internal tool; this field can be used, but
+results should be verified thoroughly. If not using that field, users
+should geocode the records themselves to generate point features
+representing individual school locations. Once geocoded, the resulting
+points can be used to identify associated parcel polygons via a spatial
+selection or spatial join, selecting parcels that contain or intersect
+each point location.
 
 Following the spatial selection process, identified parcels should be
 reviewed and verified using available parcel ownership and land use
@@ -1148,6 +1150,26 @@ point features:
   Ensure matching coordinate systems
 \item
   Perform a spatial selection (often referred to as Select by Location)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ArcGIS Pro:
+    \href{https://doc.esri.com/en/arcgis-pro/latest/help/mapping/navigation/select-features-by-location.html}{Select
+    by Location},
+    \href{https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/spatial-join.html?tabs=dialog}{Spatial
+    Join},
+    \href{https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/summarize-within.html?tabs=dialog}{Summarize
+    Within}
+  \item
+    QGIS:
+    \href{https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html\#extract-by-location}{Extract
+    by Location} or
+    \href{https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html\#select-by-location}{Select
+    by Location} within Vector Selection,
+    \href{https://www.qgistutorials.com/en/docs/3/performing_spatial_joins.html}{Join
+    Attributes by Location}
+  \end{itemize}
 \item
   Export or save the selected polygons
 \end{enumerate}
@@ -1997,11 +2019,12 @@ is available as a geospatial layer as points, linked below.
 \textbf{Inclusion of a brownfield site in the inventory does not
 automatically indicate that the site is feasible for redevelopment.}
 Brownfield sites often require detailed environmental evaluation and may
-not be financially viable to remediate to residential standards.
-Municipalities and COGs should carefully review brownfield sites using
-local knowledge and supplemental data before including them as
-potentially redevelopable, and should be mindful of environmental
-justice considerations.
+not be financially viable to remediate to residential standards, and
+some sites may have already been developed or remediated. Municipalities
+and COGs should carefully review brownfield sites using local knowledge
+and supplemental data before including them as potentially
+redevelopable, and should be mindful of environmental justice
+considerations.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

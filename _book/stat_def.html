@@ -502,7 +502,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="sec-ct-education-directory">CT Education Directory</h4>
 <p>There is no publicly available statewide GIS dataset representing public school locations in Connecticut. However, the Connecticut State Department of Education (CSDE) maintains a tabular dataset containing the official listing of public educational organizations, including district name, school name, street address, municipality, and ZIP code information.</p>
 <p><strong>Dataset:</strong> <a href="https://data.ct.gov/Education/Education-Directory/9k2y-kqxn/about_data">Education Directory (CT Open Data Portal)</a></p>
-<p>Because the dataset is provided in address form and does not contain spatial geometry, the records must first be spatialized through a geocoding process to generate point features representing individual school locations. Once geocoded, the resulting point dataset can be used to identify associated parcel polygons through a spatial selection or spatial join operation, whereby parcels containing or intersecting point locations are selected.</p>
+<p>The Education Directory provides location data as addresses. The Open Data Portal includes a column that contains latitude and longitude, since it was geocoded by an internal tool; this field can be used, but results should be verified thoroughly. If not using that field, users should geocode the records themselves to generate point features representing individual school locations. Once geocoded, the resulting points can be used to identify associated parcel polygons via a spatial selection or spatial join, selecting parcels that contain or intersect each point location.</p>
 <p>Following the spatial selection process, identified parcels should be reviewed and verified using available parcel ownership and land use attributes. In many cases, qualifying school parcels can be confirmed based on ownership records indicating municipal, district, or other public ownership, and/or parcel use classifications identifying the property as a school, educational facility, or similar institutional use. Additional manual review may be necessary in situations where multiple parcels are associated with a single school campus or where ownership and land use information are ambiguous.</p>
 <p>Geocoding references:</p>
 <ul>
@@ -512,7 +512,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>After geocoding addresses to points, use this process to identify and extract polygons (parcels) based on their co-location with associated point features:</p>
 <ol type="1">
 <li>Ensure matching coordinate systems</li>
-<li>Perform a spatial selection (often referred to as Select by Location)</li>
+<li>Perform a spatial selection (often referred to as Select by Location)
+<ul>
+<li>ArcGIS Pro: <a href="https://doc.esri.com/en/arcgis-pro/latest/help/mapping/navigation/select-features-by-location.html">Select by Location</a>, <a href="https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/spatial-join.html?tabs=dialog">Spatial Join</a>, <a href="https://doc.esri.com/en/arcgis-pro/latest/tool-reference/analysis/summarize-within.html?tabs=dialog">Summarize Within</a></li>
+<li>QGIS: <a href="https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#extract-by-location">Extract by Location</a> or <a href="https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#select-by-location">Select by Location</a> within Vector Selection, <a href="https://www.qgistutorials.com/en/docs/3/performing_spatial_joins.html">Join Attributes by Location</a></li>
+</ul></li>
 <li>Export or save the selected polygons</li>
 </ol>
 <p><br></p>

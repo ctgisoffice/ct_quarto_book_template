@@ -235,7 +235,7 @@ Examples include:
 
 <br/>
 
-### Recommended Datasets
+### Data Resources
 
 There is no single comprehensive dataset of open space, parks, and recreation areas in Connecticut. The following sources, used in combination, should capture most qualifying parcels and land area. Some overlap across sources is expected, but each may also identify areas the others miss. See the “Technical Guidance” section below for more details about using, filtering, spatializing, and querying these datasets.
 
@@ -442,7 +442,7 @@ Connecticut wetlands and watercourses are defined as follows:
 
 <br/>
 
-### Recommended Datasets
+### Data Resources
 
 1.  [Soils Inland Wetland](#sec-soils-inland-wetland)
 2.  [High Resolution Tidal Marsh Datasets](#sec-high-resolution-tidal-marsh-datasets)
@@ -514,7 +514,7 @@ Areas with unsuitable topography may not be reasonably available for development
 
 <br>
 
-### Recommended Datasets
+### Data Resources
 
 - [Local Data](#sec-local-data-topo)
 - [Connecticut Steep Slope Areas](#sec-connecticut-steep-slope-areas)
