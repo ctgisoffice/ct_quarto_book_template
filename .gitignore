@@ -8,4 +8,5 @@
 
 /.quarto/
 /_book/
+/images/pdf_cover.svg/
 **/*.quarto_ipynb

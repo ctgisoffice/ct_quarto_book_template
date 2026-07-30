@@ -9,7 +9,7 @@ This is a summary of what is in section 1
 
 <br/>
 
-## [Section 1](Section2.qmd)
+## [Section 2](Section2.qmd)
 
 This is a summary of what is in section 2
 
