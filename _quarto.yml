@@ -7,9 +7,9 @@ toc: true
 toc-depth: 5
 
 book:
-  title: "Developable Land Inventory"
+  title: "CT GIS Offic Quarto Book Template"
   author: "CT Office of Policy and Management, GIS Office"
-  subtitle: "Technical Guidance"
+  subtitle: "Template Document"
   chapters:
     - index.qmd
     - Section1.qmd

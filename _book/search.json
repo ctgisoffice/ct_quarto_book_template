@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Developable Land Inventory",
+    "title": "CT GIS Offic Quarto Book Template",
     "section": "",
-    "text": "Summary\nThe Developable Land Inventory Technical Guidance, prepared by the Connecticut Office of Policy and Management’s GIS Office, provides a standardized, transparent framework for municipalities to identify a “developable land inventory”, a preliminary screening level product, as defined in Connecticut General Statutes (C.G.S.) Sec. 8-13aa. This is required as part of the Regional Housing Needs Assessment allocation requirements (C.G.S. Sec. 8-13dd) and the municipal and regional Housing Growth Plans (C.G.S. Sec. 8-13bb and 8-13cc), as well as a foundational piece of subsequent suitability analyses as part of the a Housing Growth Plan. The guidance outlines datasets, analytical methods, and mapping standards that can be used to produce a consistent, statewide inventory of developable land.\nThe document emphasizes that identifying land as “developable” does not obligate development, nor does exclusion from the inventory permanently restrict future development opportunities. Instead, the inventory serves as a foundational input to each municipality’s Housing Growth Plan, supporting other elements of the planning process. The developable land inventory is not a permanent designation of a property’s development potential.\nThe developable land inventory is only one element of the broader planning process required under these statutes. The diagram below shows how it fits within that larger analysis.",
+    "text": "Summary",
     "crumbs": [
       "Summary"
     ]
@@ -363,6 +363,46 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Appendix B</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "CT GIS Offic Quarto Book Template",
+    "section": "Section 1",
+    "text": "Section 1\nThis is a summary of what is in section 1",
+    "crumbs": [
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "index.html#section-1-1",
+    "href": "index.html#section-1-1",
+    "title": "CT GIS Offic Quarto Book Template",
+    "section": "Section 1",
+    "text": "Section 1\nThis is a summary of what is in section 2",
+    "crumbs": [
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "index.html#appendix-a",
+    "href": "index.html#appendix-a",
+    "title": "CT GIS Offic Quarto Book Template",
+    "section": "Appendix A",
+    "text": "Appendix A\nThis is a summary of what is in Appendix A",
+    "crumbs": [
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "index.html#appendix-b",
+    "href": "index.html#appendix-b",
+    "title": "CT GIS Offic Quarto Book Template",
+    "section": "Appendix B",
+    "text": "Appendix B\nThis is a summary of what is in Appendix",
+    "crumbs": [
+      "Summary"
     ]
   }
 ]
