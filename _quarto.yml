@@ -12,16 +12,12 @@ book:
   subtitle: "Technical Guidance"
   chapters:
     - index.qmd
-    - intro.qmd
-    - outputs.qmd
-    - stat_def.qmd
-    - vac_redev.qmd
-    - map.qmd
-    - end.qmd
+    - Section1.qmd
+    - Section2.qmd
   appendices: 
-    - faq.qmd 
-    - changelog.qmd
-  page-footer: "CT OPM, GIS Office, July 2026 V1.0"
+    - AppendixA.qmd
+    - AppendixB.qmd
+  page-footer: "CT OPM, GIS Office, Date Last Updated VX.X"
   favicon: logos/CT-GIS-Office-favicon.png
   downloads: [pdf]
   sidebar:
@@ -66,5 +62,5 @@ format:
         \usepackage{float}
 
     
-editor: visual
+editor: source
 
